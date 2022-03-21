@@ -13,4 +13,4 @@ https://docs.google.com/drawings/d/1Qvs3FoqgWfJ8TeUaQA_9rAR2ZXiOdkFTljUQolG9uLk/
 
 E/R MODEL: 
 
-https://docs.google.com/drawings/d/1ARxJ6HJJ350vyKYNhSuRDOfOmSM81ExJiBAgKzK8Ps8/edit?usp=sharing
+https://drive.google.com/file/d/1q1XqjxaZwpA2yWk8creg6UklRRZRgbGO/view?usp=sharing
