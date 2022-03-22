@@ -638,10 +638,7 @@ body .Workflow .cartel .box .content a:hover {
 
 h3 {
   color: #1d7096;
-}
-
-h2 {
-  z-index:100;
+  z-index: 100;
 }
 
 .hrline {
