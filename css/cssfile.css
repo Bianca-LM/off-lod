@@ -329,7 +329,7 @@ h2{
   left: 16px;
 }
 
-#itemssection {
+#itemssection, #teampresentation {
   padding: 30px;
   background-color: #f7f6e8;
   content: "";
