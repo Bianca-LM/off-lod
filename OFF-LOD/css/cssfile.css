@@ -330,8 +330,11 @@ h2{
 
 #itemssection {
   padding: 30px;
-  background-color: aliceblue;
-  height: 120vh;
+  background-color: #f7f6e8;
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
 }
 
 .tab {
@@ -656,4 +659,43 @@ h3 {
 
 .centertext {
   text-align: center;
+}
+
+
+.nav-pills-custom .nav-link {
+  color: #aaa;
+  background: #fff;
+  position: relative;
+}
+
+.nav-pills-custom .nav-link.active {
+  color: #1d7096;
+  background: #fff;
+}
+
+
+/* Add indicator arrow for the active tab */
+@media (min-width: 992px) {
+  .nav-pills-custom .nav-link::before {
+      content: '';
+      display: block;
+      border-top: 8px solid transparent;
+      border-left: 10px solid #fff;
+      border-bottom: 8px solid transparent;
+      position: absolute;
+      top: 50%;
+      right: -10px;
+      transform: translateY(-50%);
+      opacity: 0;
+  }
+}
+
+.nav-pills-custom .nav-link.active::before {
+  opacity: 1;
+}
+
+.tab-pane::after {
+  content: "";
+  clear: both;
+  display: table;
 }
