@@ -193,7 +193,9 @@ body {
 }
 
 p {
-line-height: 30px
+line-height: 30px;
+margin: 20px;
+text-align: justify
 }
 
 /* Container needed to position the button. Adjust the width as needed */
@@ -308,6 +310,7 @@ h2{
   font-weight: bold;
   font-family: 'DM Sans';
   cursor: pointer;
+  margin-left: 20px;
 }
 
 #firstsection {
@@ -414,7 +417,7 @@ div.desc {
 @media only screen and (max-width: 700px) {
   .responsive {
     width: 49.99999%;
-    margin: 6px 0;
+    margin: 0.375rem 0;
   }
 }
 
@@ -444,6 +447,12 @@ div.desc {
   box-sizing: border-box;
 }
 
+
+.btncontainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
 
 .learn-more {
   position: relative;
@@ -638,9 +647,12 @@ body .Workflow .cartel .box .content a:hover {
 
 h3 {
   color: #1d7096;
-  z-index: 100;
 }
 
 .hrline {
   background-color: rgba(255, 255, 255, 0.555);
+}
+
+.centertext {
+  text-align: center;
 }
