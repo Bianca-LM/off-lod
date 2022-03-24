@@ -209,6 +209,7 @@ text-align: justify
 #buttoncontainer img {
   width: 100%;
   height: auto;
+  z-index: -1;
 }
 
 /* Style the button and place it in the middle of the container/image */
@@ -293,16 +294,6 @@ text-align: justify
   transform: translateX(-50%) translateY(-100%);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
-}
-
-#hero {
-  padding-top: 70px;
-  position: relative;
-  text-align: center;
-}
-
-#imghero {
-  z-index: -1
 }
 
 h2{
