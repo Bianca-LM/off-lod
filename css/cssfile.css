@@ -575,6 +575,10 @@ h3 {
   background: #fff;
 }
 
+#tabMDScout {
+  width: 75%; 
+  border-collapse: collapse; 
+}
 
 /* Add indicator arrow for the active tab */
 @media (min-width: 992px) {
