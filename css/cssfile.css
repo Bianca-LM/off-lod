@@ -413,10 +413,20 @@ div.desc {
 }
 
 .responsive {
-  padding: 0 6px;
-  float: left;
+  padding: 30px 6px;
   width: 24.99999%;
   min-width: 300px;
+  display: inline-flex;
+  float: left;
+}
+
+.clearfix {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
 }
 
 @media only screen and (max-width: 700px) {
