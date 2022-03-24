@@ -688,6 +688,7 @@ h3 {
 }
 
 .mapinmodel {
+  display: block;
   width: 80%;
   height: auto;
   margin-left: auto;
