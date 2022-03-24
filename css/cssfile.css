@@ -694,7 +694,9 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 15px;
+  border: 2px solid;
 }
+
 .nav-pills-custom .nav-link {
   color: #aaa;
   background: #fff;
