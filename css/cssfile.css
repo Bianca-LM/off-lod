@@ -4,7 +4,6 @@
   z-index: 997;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.24);
   margin-left: -15px;
-
 }
 
 #header .logo a {
@@ -194,7 +193,7 @@ body {
 }
 
 #bodymodels {
-  padding-top: 65px;
+  padding-top: 75px;
 }
 
 p {
@@ -663,6 +662,7 @@ body .Workflow .cartel .box .content a:hover {
 
 h3 {
   color: #1d7096;
+  padding: 30px;
 }
 
 .hrline {
