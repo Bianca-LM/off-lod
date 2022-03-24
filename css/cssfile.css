@@ -690,6 +690,9 @@ h3 {
 .mapinmodel {
   width: 80%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 15px;
 }
 .nav-pills-custom .nav-link {
   color: #aaa;
