@@ -448,9 +448,6 @@ div.desc {
   clear: both;
 }
 
-#item2 {
-  float: left;
-}
 #thirdsection {
   padding: 30px;
 }
@@ -705,8 +702,4 @@ h3 {
   opacity: 1;
 }
 
-.tab-pane::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
