@@ -332,7 +332,14 @@ h2{
   left: 16px;
 }
 
-#itemssection, #teampresentation, #ERModel {
+#ERModel {
+  background-color: #f7f6e8;
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+#itemssection, #teampresentation {
   padding: 30px;
   background-color: #f7f6e8;
   content: "";
