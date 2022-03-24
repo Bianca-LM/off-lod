@@ -687,7 +687,10 @@ h3 {
   text-align: center;
 }
 
-
+.mapinmodel {
+  width: 100%;
+  height: auto;
+}
 .nav-pills-custom .nav-link {
   color: #aaa;
   background: #fff;
