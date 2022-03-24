@@ -3,7 +3,7 @@ body, html {
   height: 100%;
 }
 
-#header {
+header {
   background: rgb(247, 245, 245);
   transition: all 0.5s;
   z-index: 997;
@@ -11,10 +11,10 @@ body, html {
   margin-left: -15px;
 }
 
-#header .logo a {
+header .logo a {
   color: #0f394c;
 }
-#header .logo img {
+header .logo img {
   max-height: 30px;
 }
 
