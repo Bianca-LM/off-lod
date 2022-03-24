@@ -121,6 +121,7 @@ text-align: justify
 /* Container needed to position the button. Adjust the width as needed */
 #buttoncontainer {
   position: relative;
+  top: 80%;
   width: 100%;
 }
 
