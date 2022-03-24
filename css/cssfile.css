@@ -189,11 +189,8 @@
 }
 
 body {
-  font-family: 'DM Sans';
-}
-
-#bodymodels {
   padding-top: 75px;
+  font-family: 'DM Sans';
 }
 
 p {
