@@ -75,30 +75,34 @@ nav .dropdown ul a {
   font-weight: 500;
 }
 
-.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+nav .dropdown ul a:hover, nav .dropdown ul .active:hover, nav .dropdown ul li:hover > a {
   color: #59759d;
 }
-.navbar .dropdown:hover > ul {
+
+nav .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
 }
-.navbar .dropdown .dropdown ul {
+
+nav .dropdown .dropdown ul {
   top: 0;
   left: calc(100% - 30px);
   visibility: hidden;
 }
-.navbar .dropdown .dropdown:hover > ul {
+
+nav .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
   visibility: visible;
 }
+
 @media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
+  nav .dropdown .dropdown ul {
     left: -90%;
   }
-  .navbar .dropdown .dropdown:hover > ul {
+  nav .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
