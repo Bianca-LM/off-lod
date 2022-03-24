@@ -332,7 +332,7 @@ h2{
   left: 16px;
 }
 
-#itemssection, #teampresentation {
+#itemssection, #teampresentation, #ERModel {
   padding: 30px;
   background-color: #f7f6e8;
   content: "";
@@ -662,7 +662,7 @@ body .Workflow .cartel .box .content a:hover {
 
 h3 {
   color: #1d7096;
-  padding: 30px;
+  padding: 20px;
 }
 
 .hrline {
