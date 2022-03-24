@@ -332,13 +332,22 @@ h2{
   left: 16px;
 }
 
-#ERModel {
+class="Modelssection1" {
+  padding-top:10px;
+  content: "";
+  clear: both;
+  display: table;
+  width: 100%;
+}
+
+class="Modelssection2" {
   background-color: #f7f6e8;
   content: "";
   clear: both;
   display: table;
   width: 100%;
 }
+
 #itemssection, #teampresentation {
   padding: 30px;
   background-color: #f7f6e8;
