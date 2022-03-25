@@ -225,6 +225,10 @@ text-align: justify
   background-size: cover;
 }
 
+#studyofthedomain {
+  padding: 30px;
+}
+
 h2{
   color: #1d7096;
   font-size: 30px;
@@ -232,6 +236,125 @@ h2{
   font-family: 'DM Sans';
   cursor: pointer;
   margin-left: 20px;
+}
+
+.title {
+  max-width: 60%;
+  width: 100%;
+  align-self: center;
+  transform: translateY(-50px);
+  margin-top: 15px; 
+  overflow: hidden;
+}
+.title span {
+  display: inline-block;
+  width: 100%;
+  transform: translateX(-100%);
+}
+.title span:last-child {
+  font-size: 1rem;
+  animation: byBottom 1s 0.25s ease both;
+}
+
+
+.undertitle {
+  margin-top: -40px;
+}
+@-moz-keyframes pop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes pop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-o-keyframes pop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes pop {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes byBottom {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes byBottom {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-o-keyframes byBottom {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes byBottom {
+  0% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
+  }
+}
+@-webkit-keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
+  }
+}
+@-o-keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
+  }
+}
+@keyframes linkAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30px;
+  }
 }
 
 h4 {
