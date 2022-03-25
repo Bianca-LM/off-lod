@@ -465,137 +465,6 @@ button:hover .button-text {
   color: #fff;
 }
 
-body .Workflow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 40px 0;
-}
-
-body .Workflow .cartel {
-  position: relative;
-  min-width: 320px;
-  height: 440px;
-  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
-    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
-    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  margin: 30px;
-  transition: 0.5s;
-}
-
-body .Workflow .cartel:nth-child(1) .box .content a {
-  background: #2196f3;
-}
-
-body .Workflow .cartel:nth-child(2) .box .content a {
-  background: #e91e63;
-}
-
-body .Workflow .cartel:nth-child(3) .box .content a {
-  background: #23c186;
-}
-
-body .Workflow .cartel .box {
-  position: absolute; 
-  top: 20px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  background: aliceblue;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  transition: 0.5s;
-}
-
-body .Workflow .cartel .box:hover {
-  transform: translateY(-50px);
-}
-
-body .Workflow .cartel .box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.185);
-}
-
-body .Workflow .cartel .box .content {
-  padding: 20px;
-  text-align: center;
-}
-
-body .Workflow .cartel .box .content h2 {
-  position: absolute;
-  top: -10px;
-  right: 30px;
-  font-size: 8rem;
-  color: rgba(255, 255, 255, 0.342);
-}
-
-body .Workflow .cartel.box .content h3 {
-  font-size: 1.8rem;
-  color: #fff;
-  z-index: 1;
-  transition: 0.5s;
-  margin-bottom: 15px;
-}
-
-body .Workflow .cartel .box .content p {
-  font-size: 1rem;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.9);
-  z-index: 1;
-  transition: 0.5s;
-}
-
-body .Workflow .cartel .box .content a {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  background: black;
-  border-radius: 5px;
-  text-decoration: none;
-  color: white;
-  margin-top: 20px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  transition: 0.5s;
-}
-body .Workflow .cartel .box .content a:hover {
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-  background: #fff;
-  color: #000;
-}
-
-h3 {
-  color: #1d7096;
-  padding: 20px;
-}
-
-.hrline {
-  background-color: rgba(255, 255, 255, 0.555);
-}
-
-.centertext {
-  text-align: center;
-}
-
-.mapinmodel {
-  display: block;
-  width: 80%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  border: 2px solid;
-}
-
 .nav-pills-custom .nav-link {
   color: #aaa;
   background: #fff;
@@ -639,6 +508,169 @@ h3 {
 
 .nav-pills-custom .nav-link.active::before {
   opacity: 1;
+}
+
+.process-wrapper {
+	margin:auto;
+	max-width:1080px;
+}
+
+#progress-bar-container {
+	position:relative;
+	width:90%;
+	margin:auto;
+	height:100px;
+	margin-top:65px;
+}
+
+#progress-bar-container ul {
+	padding:0;
+	margin:0;
+	padding-top:22px;
+	z-index:9999;
+	position:absolute;
+	width:100%;
+	margin-top:-40px
+}
+
+#progress-bar-container li:before {
+	content:" ";
+	display:block;
+	margin:auto;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:solid 2px #aaa;
+	transition:all ease 0.3s;
+}
+
+#progress-bar-container li.active:before, #progress-bar-container li:hover:before {
+	border:solid 2px #1d7096;
+}
+
+#progress-bar-container li {
+	list-style:none;
+	float:left;
+	width:20%;
+	text-align:center;
+	color:#aaa;
+	text-transform:uppercase;
+	font-size:11px;
+	cursor:pointer;
+	font-weight:700;
+	transition:all ease 0.2s;
+	vertical-align:bottom;
+	height:60px;
+	position:relative;
+}
+
+#progress-bar-container li .step-inner {
+	position:absolute;
+	width:100%;
+	bottom:0;
+}
+
+#progress-bar-container li.active, #progress-bar-container li:hover {
+	color:#1d7096;
+}
+
+#progress-bar-container li:after {
+	content:" ";
+	display:block;
+	width:6px;
+	height:6px;
+	background:#777;
+	margin:auto;
+	border:solid 7px #fff;
+	border-radius:50%;
+	margin-top:40px;
+	box-shadow:0 2px 13px -1px rgba(0,0,0,0.3);
+	transition:all ease 0.2s;
+}
+
+#progress-bar-container li:hover:after {
+	background:#555;
+}
+
+#progress-bar-container li.active:after {
+	background:#207893;
+}
+
+#progress-bar-container #line {
+	width:80%;
+	margin:auto;
+	background: #eee;
+	height:6px;
+	position:absolute;
+	left:10%;
+	top:57px;
+	z-index:1;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-bar-container #line-progress {
+	content:" ";
+	width:3%;
+	height:100%;
+	background: #207893;
+	background: -moz-linear-gradient(left, #207893 0%, #2ea3b7 100%);
+	background: -webkit-linear-gradient(left, #207893 0%,#2ea3b7 100%);
+	background: linear-gradient(to right, #207893 0%,#2ea3b7 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207893', endColorstr='#2ea3b7',GradientType=1 );
+	position:absolute;
+	z-index:2;
+	border-radius:50px;
+	transition:all ease 0.9s;
+}
+
+#progress-content-section {
+	width:90%;
+	margin: auto;
+	background: #f8f8f8;
+	border-radius: 5px;
+}
+
+#progress-content-section .section-content {
+	padding:30px 40px;
+	text-align:center;
+}
+
+#progress-content-section .section-content h2 {
+	font-size:17px;
+	text-transform:uppercase;
+	color:#1d7096;
+	letter-spacing:1px;
+}
+
+#progress-content-section .section-content p {
+	font-size:15px;
+	line-height:1.8em;
+	color:#333;
+}
+
+#progress-content-section .section-content {
+	display:none;
+	animation: FadeInUp 700ms ease 1;
+	animation-fill-mode:forwards;
+	transform:translateY(15px);
+	opacity:0;
+}
+
+#progress-content-section .section-content.active {
+	display:block;
+}
+
+@keyframes FadeInUp {
+	0% {
+		transform:translateY(15px);
+		opacity:0;
+	}
+	
+	100% {
+		transform:translateY(0px);
+		opacity:1;
+	}
 }
 
 
