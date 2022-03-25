@@ -583,6 +583,13 @@ h3 {
   margin-right: auto;
 }
 
+.tabalignment {
+  width: 90%; 
+  border-collapse: collapse; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Add indicator arrow for the active tab */
 @media (min-width: 992px) {
   .nav-pills-custom .nav-link::before {
