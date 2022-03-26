@@ -160,9 +160,8 @@
                 <tr>
                     <th>Property</th>
                     <th>DC</th>
-                    <th>ISBD</th>
-                    <th>TEI</th>
-                    <th>MARCXML</th>
+                    <th>TEI/XML</th>
+                    <th>MARC21 / MARCXML</th>
                     <th>Unimarc</th>
                     <th>ISAD(G)</th>
                     <th>EAD/XML</th>
@@ -171,7 +170,6 @@
                 </tr>
                 <tr>
                     <td>Agent</td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -191,12 +189,10 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>Creator</td>
                     <td>dc:creator</td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -215,12 +211,10 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td></td>
                 </tr>
                 <tr>
                     <td>Owner</td>
                     <td>/</td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -238,9 +232,8 @@
                 <tr>
                     <th>Property</th>
                     <th>DC</th>
-                    <th>ISBD</th>
-                    <th>TEI</th>
-                    <th>MARCXML</th>
+                    <th>TEI/XML</th>
+                    <th>MARC21 / MARCXML</th>
                     <th>Unimarc</th>
                     <th>ISAD(G)</th>
                     <th>EAD/XML</th>
@@ -248,8 +241,6 @@
                     <th>CCO</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
                     <td></td>
                     <td></td>
                     <td></td>
@@ -268,9 +259,8 @@
                 <tr>
                     <th>Property</th>
                     <th>DC</th>
-                    <th>ISBD</th>
-                    <th>TEI</th>
-                    <th>MARCXML</th>
+                    <th>TEI/XML</th>
+                    <th>MARC21 / MARCXML</th>
                     <th>Unimarc</th>
                     <th>ISAD(G)</th>
                     <th>EAD/XML</th>
@@ -278,29 +268,38 @@
                     <th>CCO</th>
                 </tr>
                 <tr>
-                    <td>City of publication</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Place of creation</td>
+                    <td>dc/terms/coverage; dc/terms/TGN</td>
+                    <td>"<publicationStmt><rs type="city">; <placeName>"</td>
+                    <td>260$e - Place of manufacture</td>
+                    <td>210$e Place of manufacture</td>
+                    <td>/</td>
+                    <td>/</td>
+                    <td>Creation Place/Original Location</td>    
+                    <td>Creation Location display</td>
                 </tr>
                 <tr>
-                    <td>City of première</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>Place of publication</td>
+                    <td>dc/terms/TGN; dc/terms/Location</td>
+                    <td>"<publicationStmt><pubPlace>; <placeName>"</td>
+                    <td>260 $a - Place of publication, distribution, etc.</td>
+                    <td>210$a Place of Publication, Distribution, etc.</td>
+                    <td>/</td>
+                    <td><publicationstmt><address></td>
+                    <td>/</td>
+                    <td>/</td>
                 </tr>
+                <tr>
+                    <td>Current location</td>
+                    <td>dc/terms/TGN; dc/terms/Location</td>
+                    <td>"<placeName>"</td>
+                    <td>852$a - Location </td>
+                    <td>210$a Place of Publication, Distribution, etc.</td>
+                    <td>Existence and locations of originals</td>
+                    <td>"<originalsloc>; <physloc>"</td>
+                    <td>Current Location Description; Repository/Geographic Location</td>
+                    <td>Current Location display</td>
+                </tr>        
                 </table>
         
                 <h4>When?</h4>
@@ -308,9 +307,8 @@
                 <tr>
                     <th>Property</th>
                     <th>DC</th>
-                    <th>ISBD</th>
-                    <th>TEI</th>
-                    <th>MARCXML</th>
+                    <th>TEI/XML</th>
+                    <th>MARC21 / MARCXML</th>
                     <th>Unimarc</th>
                     <th>ISAD(G)</th>
                     <th>EAD/XML</th>
@@ -319,27 +317,25 @@
                 </tr>
                 <tr>
                     <td>Date of creation</td>
-                    <td>dc:date</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>dc/terms/date</td>
+                    <td>"<creation><date> </date></creation>"</td>
+                    <td>260$g - Date of manufacture</td>
+                    <td>210$h Date of manufacture</td>
+                    <td>Date(s)</td>
+                    <td><unitdate></td>
+                    <td>Creation Date</td>
+                    <td>Display Date</td>
                 </tr>
                 <tr>
                     <td>Date of publication</td>
-                    <td>dc:dateCopyrighted</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td>dc/terms/dateCopyrighted</td>
+                    <td>"<publicationStmt><date> </date></publicationStmt>"</td>
+                    <td>260$c - Date of publication, distribution, etc.</td>
+                    <td>210$d Date of Publication</td>
+                    <td>Date(s)</td>
+                    <td>"<publicationstmt><date>"</td>
+                    <td>/</td>
+                    <td>/</td>
                 </tr>
                 </table>
         
