@@ -495,8 +495,8 @@ button:hover .button-text {
 .tabalignment {
   width: 90%; 
   border-collapse: collapse; 
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Add indicator arrow for the active tab */
