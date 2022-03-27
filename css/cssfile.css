@@ -290,6 +290,7 @@ h3, h4 {
 .Modelssection2 {
   background-color: #f7f6e8;
   padding-top: 30px;
+  width: 100%;
   content: "";
   clear: both;
   display: table;
