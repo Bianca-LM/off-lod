@@ -11,3 +11,6 @@ informazioni sul modello E/R: https://it.wikipedia.org/wiki/Modello_E-R
 
   - E/R Model: 
     ![E-R Model](Entity_relationship.drawio.png)
+  
+  - Theoretical Model: https://drive.google.com/file/d/1DJ6nIx3zQzoqgPN590HGSaRQNiUsadyl/view?usp=sharing
+    1[Theoretical Model](https://github.com/Bianca-LM/off-lod/blob/14aa90050f3069e1abcb79d52ef46a0bab756933/Theoretical%20model.drawio.png)
