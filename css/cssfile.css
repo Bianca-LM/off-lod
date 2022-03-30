@@ -218,7 +218,7 @@ text-align: justify
 
 #hero {
   padding-top: 70px;
-  background-image: url(https://www.figlidartecuticchio.com/wp-content/uploads/2021/08/Viaggio-di-Astolfo-sulla-luna-%C2%A9-Fabrizio-Lupo.jpg);
+  background-image: url("../images/astolfo.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
