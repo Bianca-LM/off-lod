@@ -423,8 +423,19 @@ button.learn-more .circle {
   border-radius: 1.625rem;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: black;
+  font-weight:bold;
+}
+
 .items-lib.learn-more .circle {
-  background: rgb(13, 103, 66);
+  background: rgb(31, 131, 89);
 }
 
 .items-arc.learn-more .circle {
@@ -585,7 +596,12 @@ button:hover .button-text {
 #progress-bar-container li .step-inner {
 	position:absolute;
 	width:100%;
-	bottom:0;
+	bottom: 0;
+}
+
+.step-inner {
+  margin-top: 2px;
+  top: 50%;
 }
 
 #progress-bar-container li.active, #progress-bar-container li:hover {
