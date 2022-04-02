@@ -939,3 +939,7 @@ button:hover .button-text {
     display: block;
   }
 }
+
+footer {
+	background-color: #D3D3D3;
+}
