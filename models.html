@@ -200,10 +200,11 @@
                             <tr>
                                 <td>Contributor</td>
                                 <td>dc:contributor</td>
-                                <td>&lt;editor&gt;</td>
+                                <td>&lg;correspAction type="sent/received"&gt;&lg;persName&gt;</td>
                                 <td>/</td>
-                                <td></td>
                                 <td>/</td>
+                                <td>Creator role</td>
+                                <td>Role</td>
                                 <td>/</td>
                                 <td>/</td>
                                 <td>/</td>
@@ -211,10 +212,11 @@
                             <tr>
                                 <td>Creator</td>
                                 <td>dc:creator</td>
-                                <td>&lt;author></td>
+                                <td>&lt;author&gt;</td>
                                 <td>100 1 $a Personal Name</td>
                                 <td>700 Personal name/primary intellectual responsibility</td>
-                                <td>Name of Creator(s)</td>
+                                <td>Creator description</td>
+                                <td>Controlled creator</td>
                                 <td>&lt;persname relator="author"&gt;</td>
                                 <td>Name of Creator</td>
                                 <td>Creator</td>
@@ -224,7 +226,8 @@
                                 <td>dc:publisher</td>
                                 <td>&lt;publisher&gt;</td>
                                 <td>260$b Name of publisher</td>
-                                <td>210$c Name of publisherv</td>
+                                <td>210$c Name of publisher</td>
+                                <td>Creator role</td>
                                 <td>/</td>
                                 <td>&lt;publisher&gt;</td>
                                 <td>/</td>
@@ -233,10 +236,11 @@
                             <tr>
                                 <td>Owner</td>
                                 <td>/</td>
-                                <td>&lt;custodialHist&gt;</td>
+                                <td>&lt;acquisition&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>Administrative / Biographical history</td>
+                                <td>Owner/Agent</td>
+                                <td>Current Location</td>
                                 <td>&lt;custodhist&gt;</td>
                                 <td>Ownership/ collecting history, owner</td>
                                 <td>/</td>
@@ -262,9 +266,10 @@
                             <tr>
                                 <td>Title</td>
                                 <td>dc:title</td>
-                                <td>&lt;msName&gt;</td>
+                                <td>&lt;title&gt;</td>
                                 <td>245 $a Title</td>
                                 <td>200 1 $a Title Proper</td>
+                                <td>Tutle text</td>
                                 <td>Title</td>                    
                                 <td>&lt;title&gt;</td>
                                 <td>Title Text</td>
@@ -276,7 +281,8 @@
                                 <td>&lt;textLang&gt;</td>
                                 <td>41 Language code</td>
                                 <td>101 Language of the Item</td>
-                                <td>Language of material</td>
+                                <td>/</td>
+                                <td>Language</td>
                                 <td>&lt;langmaterial&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
@@ -287,7 +293,8 @@
                                 <td>&lt;msContents&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>Scope and Content</td>
+                                <td>Subject Matter</td>
+                                <td>Subject display</td>
                                 <td>&lt;subject&gt;</td>
                                 <td>General Subject Terms</td>
                                 <td>Subject display</td>
@@ -295,10 +302,11 @@
                             <tr>
                                 <td>Material</td>
                                 <td>dcterms:medium</td>
-                                <td>&lt;material&gt;</td>
+                                <td>&lt;supportDesc marterial="..."&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>/</td>
+                                <td>Materials/Techniques Description</td>
+                                <td>Material (controlled)</td>
                                 <td>&lt;physdesc&gt;</td>
                                 <td>Materials description</td>
                                 <td>Material</td>
@@ -307,9 +315,10 @@
                                 <td>Technique</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td></td>
                                 <td>/</td>
                                 <td>/</td>
+                                <td>Materials/Techniques Description</td>
+                                <td>Technique (controlled)</td>
                                 <td>/</td>
                                 <td>Technique description</td>
                                 <td>Technique</td>
@@ -320,7 +329,8 @@
                                 <td>&lt;availability&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>Conditions governing reproductions</td>
+                                <td>Copyright/Restrictions</td>
+                                <td>/</td>
                                 <td>&lt;control&gt;&lt;rightsdeclaration&gt;</td>
                                 <td>Copyrights statement</td>
                                 <td>/</td>
@@ -331,7 +341,8 @@
                                 <td>/</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>/</td>
+                                <td>Object/Work Type</td>
+                                <td>Work type (controlled)</td>
                                 <td>/</td>
                                 <td>Object/Work Type</td>
                                 <td>Work Type</td>
@@ -339,10 +350,11 @@
                             <tr>
                                 <td>Description</td>
                                 <td>dc:description</td>
-                                <td>&lt;summary&gt;</td>
+                                <td>&lt;msContents&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>Scope and content</td>
+                                <td>Descriptive Note</td>
+                                <td>Description</td>
                                 <td>/</td>
                                 <td>/</td>
                                 <td>Description element</td>
@@ -350,8 +362,9 @@
                             <tr>
                                 <td>Identifier</td>
                                 <td>dc:identifier</td>
+                                <td>&lt;idno&gt;</td>
                                 <td>/</td>
-                                <td>/</td>
+                                <td>Object/Work Record ID</td>
                                 <td>001 Record Identifier</td>
                                 <td>/</td>
                                 <td>/</td>
@@ -361,10 +374,11 @@
                             <tr>
                                 <td>Source</td>
                                 <td>dc:source</td>
+                                <td>&lt;source&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
+                                <td>Citations</td>
+                                <td>Source (controlled)</td>
                                 <td>/</td>
                                 <td>/</td>
                                 <td>/</td>
@@ -372,10 +386,11 @@
                             <tr>
                                 <td>Format</td>
                                 <td>dc:format</td>
+                                <td>&lg;dimensions&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
+                                <td>Format/Size</td>
+                                <td>Format</td>
                                 <td>/</td>
                                 <td>/</td>
                                 <td>/</td>
@@ -383,10 +398,11 @@
                             <tr>
                                 <td>Note</td>
                                 <td>/</td>
-                                <td>/</td>
+                                <td>&lt;note&gt</td>
                                 <td>500 $a General note</td>
                                 <td>300 $a Text of note</td>
-                                <td>/</td>
+                                <td>Remarks</td>
+                                <td>Other Descriptive Notes</td>
                                 <td>/</td>
                                 <td>/</td>
                                 <td>/</td>
@@ -418,15 +434,17 @@
                                 <td>/</td>
                                 <td>/</td>
                                 <td>/</td>
+                                <td>/</td>
                                 <td>/</td>    
                             </tr> 
                             <tr>
                                 <td>Place of birth</td> 
                                 <td>/</td>
-                                <td>&lt;birth place="..."&gt;</td>
+                                <td>&lt;birth&gt;&lt;placeName&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>/</td>
+                                <td>Birth Place</td>
+                                <td>Nationality</td>
                                 <td>/</td>
                                 <td>Birth Place</td>
                                 <td>Nationality</td>    
@@ -434,20 +452,22 @@
                             <tr>
                                 <td>Place of creation</td>
                                 <td>/</td>
-                                <td>&lt;placeName&gt;</td>
+                                <td>&lt;creation&gt;&lt;placeName&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>/</td>
+                                <td>Creation Place/Original Location</td>
+                                <td>Creation Location display</td>
                                 <td>/</td>
                                 <td>Creation Place/Original Location</td>    
-                                <td>Creation Location display</td>
+                                <td>7</td>
                             </tr>
                             <tr>
                                 <td>Place of publication</td>
                                 <td>/</td>
-                                <td>&lt;publicationStmt&gt;&lt;pubPlace&gt;</td>
+                                <td>&lt;pubPlace&gt;</td>
                                 <td>260 $a Place of publication</td>
                                 <td>210$a Place of publication</td>
+                                <td>/</td>
                                 <td>/</td>
                                 <td>&lt;publicationstmt&gt;&lt;address&gt;</td>
                                 <td>/</td>
@@ -456,24 +476,26 @@
                             <tr>
                                 <td>Original location</td> 
                                 <td>/</td>
-                                <td>&lt;placeName&gt;</td>
+                                <td>&lt;origPlace&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>/</td>
+                                <td>Provenance Description</td>
+                                <td>Former Locations</td>
                                 <td>&lt;originalsloc&gt;</td>
                                 <td>Creation Place/Original Location</td>    
-                                <td>Former Locations</td>
+                                <td>/</td>
                             </tr>    
                             <tr>
                                 <td>Current location</td>
                                 <td>/</td>
-                                <td>&lt;placeName&gt;</td>
+                                <td>&lt;place&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>Existence and locations of originals</td>
-                                <td>&lt;originalsloc&gt;</td>
                                 <td>Current Location Description</td>
                                 <td>Current Location display</td>
+                                <td>&lt;originalsloc&gt;</td>
+                                <td>/</td>
+                                <td>/</td>
                             </tr>        
                                 </table>
                             </div>
@@ -496,12 +518,13 @@
                             <tr>
                                 <td>Date of birth</td> 
                                 <td>/</td>
-                                <td>&lt;birth& when="..."gt;</td>
+                                <td>&lt;birth&gt;&lt;date&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>/</td>
-                                <td>/</td> <!-- &lt;persname relator="creator"&gt;&lt;part localtype="dates"&gt; --->
-                                <td>Birth Date</td>    
+                                <td>Birth Date</td>
+                                <td>Birth Date</td>
+                                <td>/</td> 
+                                <td>/</td>    
                                 <td>Birth Date</td>
                             </tr>     
                             <tr>
@@ -510,7 +533,8 @@
                                 <td>&lt;creation&gt;&lt;date&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
-                                <td>Date(s)</td>
+                                <td>Object/Work Type Date</td>
+                                <td>Display Date</td>
                                 <td>&lt;unitdate&gt;</td>
                                 <td>Creation Date</td>
                                 <td>Display Date</td>
@@ -521,7 +545,8 @@
                                 <td>&lt;publicationStmt&gt;&lt;date&gt;</td>
                                 <td>260$c Date of publication</td>
                                 <td>210$d Date of publication</td>
-                                <td>Date(s)</td>
+                                <td>/</td>
+                                <td>/</td>
                                 <td>&lt;publicationstmt&gt;&lt;date&gt;</td>
                                 <td>/</td>
                                 <td>/</td>
