@@ -1,131 +1,132 @@
 <!doctype html>
 <html>
-    <head>
-        <title>OFF-LOD - Models</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-widht, inital-scale=1">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/cssfile.css"/>
-        <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
-        <script type="text/javascript" src="myscript.js"></script>
-    </head>
-    <body id="bodymodels">
-
-        <!-- Header and Navbar-->
-
-        <header id="header" class="fixed-top">
-            <div class="container-fluid d-flex justify-content-between">
+<head>
+    <title>OFF-LOD - Models</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-widht, inital-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cssfile.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
+    <script type="text/javascript" src="myscript.js"></script>
+</head>
+<body id="bodymodels">
+    
+    <!-- Header and Navbar-->
+    
+    <header id="header" class="fixed-top">
+        <div class="container-fluid d-flex justify-content-between">
             <a href="index.html" id="logo"><img src="images/off-logo.png" alt="" class="img-fluid"></a>
-
-              <!-- Navbar -->
-
-              <nav id="navbar" class="navbar">
+            
+            <!-- Navbar -->
+            
+            <nav id="navbar" class="navbar">
                 <ul>
-                  <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-                  <li class="dropdown"><a class="scrollto active" href="models.html"><span>Models</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#conceptualMap">Conceptual model</a></li>
-                      <li><a href="#ERModel">E/R model</a></li>
-                      <li class="dropdown"><a href="#"><span>Metadata</span> <i class="bi bi-chevron-right"></i></a>
+                    <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+                    <li class="dropdown"><a class="scrollto active" href="models.html"><span>Models</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                          <li><a href="#MDScouting">Metadata scouting</a></li>
-                          <li><a href="#MDAlignment">Metadata alignment</a></li>
+                            <li><a href="#conceptualMap">Conceptual map</a></li>
+                            <li><a href="#ERModel">E/R model</a></li>
+                            <li class="dropdown"><a href="#"><span>Metadata</span> <i class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li><a href="#MDScouting">Metadata scouting</a></li>
+                                    <li><a href="#MDAlignment">Metadata alignment</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#TheoModel">Theoretical model</a></li>
+                            <li><a href="#ConcModel">Conceptual model</a></li>
                         </ul>
-                      </li>
-                      <li><a href="#TheoModel">Theoretical model</a></li>
-                      <li><a href="#ConcModel">Conceptual model</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown"><a href="#"><span>Data</span> <i class="bi bi-chevron-down"></i></a>
-                    <ul>
-                      <li><a href="#">Data description</a></li>
-                      <li><a href="#">RDF production</a></li>
-                      <li><a href="#">RDF visualization</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="nav-link scrollto" href="index.html#teampresentation">Contact</a></li>
+                    </li>
+                    <li class="dropdown"><a href="dataRdf.html"><span>Data</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="dataRdf.html#DataDesc">Data description</a></li>
+                            <li><a href="dataRdf.html#Turtle">RDF production</a></li>
+                            <li><a href="dataRdf.html#RDFVisualization">RDF visualization</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto" href="index.html#teampresentation">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
-              </nav>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Content -->
+    <div id="conceptualMap" class="Modelssection1">
+        <h2 class="models-p">The Conceptual Map</h2>
+        <p class="models-p">The Conceptual Map represents the real data as extracted from the chosen items, together with the explicit relationships.</p>
+        <img src="OFFLOD - Conceptual Model.png" class="mapinmodel">
+    </div>
+    
+    <div id="ERModel" class="Modelssection2">
+        <h2 class="models-p">The E-R Model</h2>
+        <p class="models-p">An Entity-Relationship Model is a translation of the Conceptual Map in a more abstract formalism, which is focused exclusively on entities, relationships and their attributes</p>
+        <img src="Entity_relationship.drawio.png" class="mapinmodel">
+    </div>
+    
+    <div id="metadata" class="Modelssection1">
+        <h2 class="models-p">Metadata</h2>
+        
+        <h3 id="MDScouting" class="models-p">Metadata scouting</h3>
+        <p class="models-p">For each selected item the online catalog description by the institution was checked. In particular, major attention was paid to the analysis of the metadata and their respective standards. The metadata scouting phase aims at highlighting the relationship between each item and the most adequate standard.</p>
+        <p class="models-p">The standards provided by the institutions are marked by the symbol &#42;. Otherwise, the most adequate standard is chosen, in particular:
+            <div class="models-p">
+                <ul>
+                    <li><b>Libraries</b>: <em>MARC</em> standards for the description of books and scores, and <em>TEI</em> for the codicological description of manuscripts;</li> 
+                    <li><b>Archives</b>: <em>ISAD(G)</em> for generic archival description, whereas <em>EAD</em> is used for letters in archival funds;</li>
+                    <li><b>Museums</b>: <em>CDWA</em> to describe generic works of art and <em>CCO</em> specifically for paintings.</li>
+                </ul>
             </div>
-        </header>
-
-        <!-- Content -->
-        <div id="conceptualMap" class="Modelssection1">
-            <h2 class="models-p">The Conceptual Map</h2>
-            <p class="models-p">The Conceptual Map represents the real data as extracted from the chosen items, together with the explicit relationships.</p>
-            <img src="OFFLOD - Conceptual Model.png" class="mapinmodel">
-        </div>
-
-        <div id="ERModel" class="Modelssection2">
-            <h2 class="models-p">The E-R Model</h2>
-            <p class="models-p">An Entity-Relationship Model is a translation of the Conceptual Map in a more abstract formalism, which is focused exclusively on entities, relationships and their attributes</p>
-            <img src="Entity_relationship.drawio.png" class="mapinmodel">
-        </div>
-
-        <div id="metadata" class="Modelssection1">
-            <h2 class="models-p">Metadata</h2>
-            
-            <h3 id="MDScouting" class="models-p">Metadata scouting</h3>
-            <p class="models-p">For each selected item the online catalog description by the institution was checked. In particular, major attention was paid to the analysis of the metadata and their respective standards. The metadata scouting phase aims at highlighting the relationship between each item and the most adequate standard.</p>
-            <p class="models-p">The standards provided by the institutions are marked by the symbol &#42;. Otherwise, the most adequate standard is chosen, in particular:
-                <div class="models-p">
-                    <ul>
-                        <li><b>Libraries</b>: <em>MARC</em> standards for the description of books and scores, and <em>TEI</em> for the codicological description of manuscripts;</li> 
-                        <li><b>Archives</b>: <em>ISAD(G)</em> for generic archival description, whereas <em>EAD</em> is used for letters in archival funds;</li>
-                        <li><b>Museums</b>: <em>CDWA</em> to describe generic works of art and <em>CCO</em> specifically for paintings.</li>
-                    </ul>
-                </div>
-            </p>
-            
-            <table class="table table-warning table-striped" id="tabMDScout">
-                <tr> <!-- HEADER --->
-                    <th>Item</th>
-                    <th>Object</th>
-                    <th>Institution</th>
-                    <th>Metadata Standard</th>
-                </tr>
-                <tr> <!-- ITEM1 --->
-                    <td>Portrait of Ludovico Ariosto</td>
-                    <td>Painting</td>
-                    <td>National Gallery, London</td>
-                    <td><a href="https://www.loc.gov/standards/vracore/">VRA Core</a></td>
-                </tr>
-                <tr> <!-- ITEM2 --->
-                    <td>Letter to Pietro Bembo</td>
-                    <td>Letter</td>
-                    <td>Archivio di Stato, Modena</td>
-                    <td><a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/">TEI/XML</a></td>
-                </tr>
-                <tr> <!-- ITEM3 --->
-                    <td>Ms. S. Mart. 353</td>
-                    <td>Manuscript</td>
-                    <td>Biblioteca Nazionale Vittorio Emanuele III, Biblioteca San Martino, Neaples</td>
-                    <td><a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/">TEI/XML</a></td>
-                </tr>
-                <tr> <!-- ITEM4 --->
-                    <td><em>Editio Princeps</em>, ed. Mazzocchi </td>
-                    <td>Printed book</td>
-                    <td>Biblioteca Nazionale Centrale, Florence</td>
-                    <td><a href="https://www.ifla.org/publications/unimarc-formats-and-related-documentation/">Unimarc</a>&#42;</td>
-                </tr>
-                <tr> <!-- ITEM5 --->
-                    <td><em>Orlando furioso</em> in English heroical verse</td>
-                    <td>Printed book</td>
-                    <td>Boston Public Library</td>
-                    <td><a href="https://www.loc.gov/standards/marcxml/">MARCXML</a>&#42;</td>
-                </tr>
-                <tr> <!-- ITEM6 --->
-                    <td><em>Cor de Roland</em></td>
-                    <td>Work of art</td>
-                    <td>Musée Paul Dupuy, Toulouse</td>
-                    <td><a href="https://www.culture.gouv.fr/content/download/197593/2109675"><em>Joconde</em></a></td>
-                </tr>
-                <tr> <!-- ITEM7 --->
-                    <td><em>Roland furieux</em></td>
-                    <td>Statue</td>
-                    <td>Musée du Louvre, Paris</td>
-                    <td><a href="https://www.culture.gouv.fr/content/download/197593/2109675"><em>Joconde</em></td>
+        </p>
+        
+        <table class="table table-warning table-striped" id="tabMDScout">
+            <tr> <!-- HEADER --->
+                <th>Item</th>
+                <th>Object</th>
+                <th>Institution</th>
+                <th>Metadata Standard</th>
+            </tr>
+            <tr> <!-- ITEM1 --->
+                <td>Portrait of Ludovico Ariosto</td>
+                <td>Painting</td>
+                <td>National Gallery, London</td>
+                <td><a href="https://www.loc.gov/standards/vracore/">VRA Core</a></td>
+            </tr>
+            <tr> <!-- ITEM2 --->
+                <td>Letter to Pietro Bembo</td>
+                <td>Letter</td>
+                <td>Archivio di Stato, Modena</td>
+                <td><a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/">TEI/XML</a></td>
+            </tr>
+            <tr> <!-- ITEM3 --->
+                <td>Ms. S. Mart. 353</td>
+                <td>Manuscript</td>
+                <td>Biblioteca Nazionale Vittorio Emanuele III, Biblioteca San Martino, Neaples</td>
+                <td><a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/">TEI/XML</a></td>
+            </tr>
+            <tr> <!-- ITEM4 --->
+                <td><em>Editio Princeps</em>, ed. Mazzocchi </td>
+                <td>Printed book</td>
+                <td>Biblioteca Nazionale Centrale, Florence</td>
+                <td><a href="https://www.ifla.org/publications/unimarc-formats-and-related-documentation/">Unimarc</a>&#42;</td>
+            </tr>
+            <tr> <!-- ITEM5 --->
+                <td><em>Orlando furioso</em> in English heroical verse</td>
+                <td>Printed book</td>
+                <td>Boston Public Library</td>
+                <td><a href="https://www.loc.gov/standards/marcxml/">MARCXML</a>&#42;</td>
+            </tr>
+            <tr> <!-- ITEM6 --->
+                <td><em>Cor de Roland</em></td>
+                <td>Work of art</td>
+                <td>Musée Paul Dupuy, Toulouse</td>
+                <td><a href="https://www.culture.gouv.fr/content/download/197593/2109675"><em>Joconde</em></a></td>
+            </tr>
+            <tr> <!-- ITEM7 --->
+                <td><em>Roland furieux</em></td>
+                <td>Statue</td>
+                <td>Musée du Louvre, Paris</td>
+                <td><a href="https://www.culture.gouv.fr/content/download/197593/2109675"><em>Joconde</em></td>
                 </tr>
                 <tr> <!-- ITEM8 --->
                     <td>Fresco by Nicolà dell'Abate</td>
@@ -138,7 +139,7 @@
                     <td>Flyer</td>
                     <td>Genius Bononiae, Biblioteca dell'Archiginnasio, Bologna</td>
                     <td><a href="http://www.getty.edu/research/publications/electronic_publications/cdwa/">CDWA</a></td>
-               </tr>
+                </tr>
                 <tr> <!-- ITEM10 --->
                     <td>Orlando furioso by Ronconi and Sanguineti</td>
                     <td>Play</td>
@@ -157,25 +158,25 @@
             <p class="models-p">The aim of the metadata alignment is to compare the different properties across the different standards. The following tables take into account the eight metadata standard identified in the scouting phase and the <em>Dublin Core</em> (<a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/">DC</a>), which is one of the most general metadata standard (indeed its utility goes beyond the cultural heritage domain). The alignment is structured in order to describe four main pieces of information: the agent (<b>who?</b>), the object (<b>what?</b>), the time-span (<b>when?</b>) and the location (<b>where?</b>).</p>
             
             <div class="tabs">
-  
+                
                 <input type="radio" id="tab1" name="tab-control" checked>
                 <input type="radio" id="tab2" name="tab-control">
                 <input type="radio" id="tab3" name="tab-control">  
                 <input type="radio" id="tab4" name="tab-control">
                 <ul>
-                  <li title="Who?"><label for="tab1" role="button"><svg viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-              </svg><br><span>Who?</span></label></li>
-                  <li title="What?"><label for="tab2" role="button"><svg viewBox="0 0 16 16"><path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
-              </svg><br><span>What?</span></label></li>
-                  <li title="Where?"><label for="tab3" role="button"><svg viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
-              </svg><br><span>Where?</span></label></li>    
-                  <li title="When?"><label for="tab4" role="button"><svg viewBox="0 0 16 16">
-                    <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
-                    <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
-                    <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
-              </svg><br><span>When?</span></label></li>
+                    <li title="Who?"><label for="tab1" role="button"><svg viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg><br><span>Who?</span></label></li>
+                    <li title="What?"><label for="tab2" role="button"><svg viewBox="0 0 16 16"><path d="M1 0 0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+                    </svg><br><span>What?</span></label></li>
+                    <li title="Where?"><label for="tab3" role="button"><svg viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98 4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+                    </svg><br><span>Where?</span></label></li>    
+                    <li title="When?"><label for="tab4" role="button"><svg viewBox="0 0 16 16">
+                        <path d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022l-.074.997zm2.004.45a7.003 7.003 0 0 0-.985-.299l.219-.976c.383.086.76.2 1.126.342l-.36.933zm1.37.71a7.01 7.01 0 0 0-.439-.27l.493-.87a8.025 8.025 0 0 1 .979.654l-.615.789a6.996 6.996 0 0 0-.418-.302zm1.834 1.79a6.99 6.99 0 0 0-.653-.796l.724-.69c.27.285.52.59.747.91l-.818.576zm.744 1.352a7.08 7.08 0 0 0-.214-.468l.893-.45a7.976 7.976 0 0 1 .45 1.088l-.95.313a7.023 7.023 0 0 0-.179-.483zm.53 2.507a6.991 6.991 0 0 0-.1-1.025l.985-.17c.067.386.106.778.116 1.17l-1 .025zm-.131 1.538c.033-.17.06-.339.081-.51l.993.123a7.957 7.957 0 0 1-.23 1.155l-.964-.267c.046-.165.086-.332.12-.501zm-.952 2.379c.184-.29.346-.594.486-.908l.914.405c-.16.36-.345.706-.555 1.038l-.845-.535zm-.964 1.205c.122-.122.239-.248.35-.378l.758.653a8.073 8.073 0 0 1-.401.432l-.707-.707z"/>
+                        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0v1z"/>
+                        <path d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5z"/>
+                    </svg><br><span>When?</span></label></li>
                 </ul>
                 
                 <div class="slider"><div class="indicator"></div></div>
@@ -183,377 +184,396 @@
                 <div class="content">
                     <section>
                         <div>                         
-                        <div class="row">
-                        <table class="table-responsive-xl table-info table-hover table-striped tabalignment col-12">
-                            <tr>
-                                <th>Property</th>
-                                <th>DC</th>
-                                <th>TEI/XML</th>
-                                <th>MARCXML</th>
-                                <th>Unimarc</th>
-                                <th>CDWA</th>
-                                <th>CCO</th>
-                                <th><em>Joconde</em></th>
-                                <th>VAR Core</th>
-                                <th>ISAD(G)</th>
-                            </tr>
-                            <tr>
-                                <td>Contributor [Receiver]</td>
-                                <td>dc:contributor</td>
-                                <td>[&lt;correspAction type="received"&gt;&lt;persName&gt;]</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Creator role</td>
-                                <td>Role</td>
-                                <td>14 - Auteur ou collecteur, fabricant, commanditaire...</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
-                            <tr>
-                                <td>Creator [Sender]</td>
-                                <td>dc:creator</td>
-                                <td>&lt;author&gt; <br> [&lt;correspAction type="sent/received"&gt;&lt;persName&gt;]</td>
-                                <td>100 1 $a Personal Name</td>
-                                <td>700 Personal name/primary intellectual responsibility</td>
-                                <td>Creator description</td>
-                                <td>Controlled creator</td>
-                                <td>14 - Auteur ou collecteur, fabricant, commanditaire...</td>
-                                <td>Name of Creator</td>
-                                <td>Creator</td>
-                            </tr>
-                            <tr>
-                                <td>Publisher</td>
-                                <td>dc:publisher</td>
-                                <td>&lt;publisher&gt;</td>
-                                <td>260$b Name of publisher</td>
-                                <td>210$c Name of publisher</td>
-                                <td>Creator role</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
-                            <tr>
-                                <td>Owner</td>
-                                <td>/</td>
-                                <td>&lt;acquisition&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Owner/Agent</td>
-                                <td>Current Location</td>
-                                <td>4 - Nom de la personne morale (ou physique) propriétaire du bien déposé</td>
-                                <td>Ownership/ collecting history, owner</td>
-                                <td>/</td>
-                            </tr>
-                            </table>
-                            </div>
-                    </section>
-                    <section>
-                        <div class="row">
-                            <table class="table-responsive-xl table-warning table-hover table-striped tabalignment col-12">
-                            <tr>
-                                <th>Property</th>
-                                <th>DC</th>
-                                <th>TEI/XML</th>
-                                <th>MARCXML</th>
-                                <th>Unimarc</th>
-                                <th>CDWA</th>
-                                <th>CCO</th>
-                                <th><em>Joconde</em></th>
-                                <th>VAR Core</th>
-                                <th>ISAD(G)</th>
-                            </tr>
-                            <tr>
-                                <td>Title</td>
-                                <td>dc:title</td>
-                                <td>&lt;title&gt;</td>
-                                <td>245 $a Title</td>
-                                <td>200 1 $a Title Proper</td>
-                                <td>Tutle text</td>
-                                <td>Title</td>                    
-                                <td>8 - Désignation du bien</td>
-                                <td>Title Text</td>
-                                <td>Title</td>
-                            </tr>
-                            <tr>
-                                <td>Language</td>
-                                <td>dc:language</td>
-                                <td>&lt;textLang&gt;</td>
-                                <td>41 Language code</td>
-                                <td>101 Language of the Item</td>
-                                <td>/</td>
-                                <td>Language</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
-                            <tr>
-                                <td>Subject</td>
-                                <td>dc:subject</td>
-                                <td>&lt;msContents&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Subject Matter</td>
-                                <td>Subject display</td>
-                                <td>8 - Désignation du bien</td>
-                                <td>General Subject Terms</td>
-                                <td>Subject display</td>
-                            </tr>
-                            <tr>
-                                <td>Material</td>
-                                <td>dcterms:medium</td>
-                                <td>&lt;supportDesc marterial="..."&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Materials/Techniques Description</td>
-                                <td>Material (controlled)</td>
-                                <td>10 - Matières ou matériaux</td>
-                                <td>Materials description</td>
-                                <td>Material</td>
-                            </tr>
-                            <tr>
-                                <td>Technique</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Materials/Techniques Description</td>
-                                <td>Technique (controlled)</td>
-                                <td>11 - Technique de réalisation</td>
-                                <td>Technique description</td>
-                                <td>Technique</td>
-                            </tr>
-                            <tr>
-                                <td>Rights</td>
-                                <td>dc:rights</td>
-                                <td>&lt;availability&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Copyright/Restrictions</td>
-                                <td>/</td>
-                                <td>16 - Fonction d'usage</td>
-                                <td>Copyrights statement</td>
-                                <td>/</td>
-                            </tr>
-                            <tr>
-                                <td>Type</td>
-                                <td>dc:type</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Object/Work Type</td>
-                                <td>Work type (controlled)</td>
-                                <td>8 - Désignation du bien</td>
-                                <td>Object/Work Type</td>
-                                <td>Work Type</td>
-                            </tr>
-                            <tr>
-                                <td>Description</td>
-                                <td>dc:description</td>
-                                <td>&lt;msContents&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Descriptive Note</td>
-                                <td>Description</td>
-                                <td>8 - Désignation du bien</td>
-                                <td>/</td>
-                                <td>Description element</td>
-                            </tr>
-                            <tr>
-                                <td>Identifier</td>
-                                <td>dc:identifier</td>
-                                <td>&lt;idno&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Object/Work Record ID</td>
-                                <td>001 Record Identifier</td>
-                                <td>1 - N° inventaire</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
-                            <tr>
-                                <td>Source</td>
-                                <td>dc:source</td>
-                                <td>&lt;source&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Citations</td>
-                                <td>Source (controlled)</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
-                            <tr>
-                                <td>Format</td>
-                                <td>dc:format</td>
-                                <td>&lt;dimensions&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Format/Size</td>
-                                <td>Format</td>
-                                <td>12 - Mesures</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
-                            <tr>
-                                <td>Note</td>
-                                <td>/</td>
-                                <td>&lt;note&gt</td>
-                                <td>500 $a General note</td>
-                                <td>300 $a Text of note</td>
-                                <td>Remarks</td>
-                                <td>Other Descriptive Notes</td>
-                                <td>18 - Observations</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
-                            </table>
-                            </div>
-                    </section>
-                    <section>
-                        <div class="row">
-                            <table class="table-responsive-xl table-danger table-hover table-striped tabalignment col-12">
-                            <tr>
-                                <th>Property</th>
-                                <th>DC</th>
-                                <th>TEI/XML</th>
-                                <th>MARCXML</th>
-                                <th>Unimarc</th>
-                                <th>CDWA</th>
-                                <th>CCO</th>
-                                <th><em>Joconde</em></th>
-                                <th>VAR Core</th>
-                                <th>ISAD(G)</th>
-                            </tr>
-                            <tr>
-                                <td>Place of birth</td> 
-                                <td>dcterms:coverage</td>
-                                <td>&lt;birth&gt;&lt;placeName&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Birth Place</td>
-                                <td>Nationality</td>
-                                <td>14 - Auteur ou collecteur, fabricant, commanditaire...</td>
-                                <td>Birth Place</td>
-                                <td>Nationality</td>    
-                            </tr>    
-                            <tr>
-                                <td>Place of creation</td>
-                                <td>dcterms:coverage</td>
-                                <td>&lt;creation&gt;&lt;placeName&gt; [<br> [&lt;correspAction type="sent"&gt;&lt;placeName&gt;]</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Creation Place/Original Location</td>
-                                <td>Creation Location display</td>
-                                <td>17 - Provenance géographique</td>
-                                <td>Creation Place/Original Location</td>    
-                                <td>7</td>
-                            </tr>
-                            <tr>
-                                <td>Place of publication</td>
-                                <td>dcterms:coverage</td>
-                                <td>&lt;pubPlace&gt;</td>
-                                <td>260 $a Place of publication</td>
-                                <td>210$a Place of publication</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
-                            <tr>
-                                <td>Original location</td> 
-                                <td>dc:coverage</td>
-                                <td>&lt;origPlace&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Provenance Description</td>
-                                <td>Former Locations</td>
-                                <td>17 - Provenance géographique</td>
-                                <td>Creation Place/Original Location</td>    
-                                <td>/</td>
-                            </tr>    
-                            <tr>
-                                <td>Current location</td>
-                                <td>dc:coverage</td>
-                                <td>&lt;place&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Current Location Description</td>
-                                <td>Current Location display</td>
-                                <td>17 - Provenance géographique</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>        
+                            <div class="row">
+                                <table class="table-responsive-xl table-info table-hover table-striped tabalignment col-12">
+                                    <tr>
+                                        <th>Property</th>
+                                        <th>DC</th>
+                                        <th>TEI/XML</th>
+                                        <th>MARCXML</th>
+                                        <th>Unimarc</th>
+                                        <th>CDWA</th>
+                                        <th>CCO</th>
+                                        <th><em>Joconde</em></th>
+                                        <th>VAR Core</th>
+                                        <th>ISAD(G)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Contributor [Receiver]</td>
+                                        <td>dc:contributor</td>
+                                        <td>[&lt;correspAction type="received"&gt;&lt;persName&gt;]</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Creator role</td>
+                                        <td>Role</td>
+                                        <td>14 - Auteur ou collecteur, fabricant, commanditaire...</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Creator [Sender]</td>
+                                        <td>dc:creator</td>
+                                        <td>&lt;author&gt; <br> [&lt;correspAction type="sent/received"&gt;&lt;persName&gt;]</td>
+                                        <td>100 1 $a Personal Name</td>
+                                        <td>700 Personal name/primary intellectual responsibility</td>
+                                        <td>Creator description</td>
+                                        <td>Controlled creator</td>
+                                        <td>14 - Auteur ou collecteur, fabricant, commanditaire...</td>
+                                        <td>Name of Creator</td>
+                                        <td>Creator</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Publisher</td>
+                                        <td>dc:publisher</td>
+                                        <td>&lt;publisher&gt;</td>
+                                        <td>260$b Name of publisher</td>
+                                        <td>210$c Name of publisher</td>
+                                        <td>Creator role</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Owner</td>
+                                        <td>/</td>
+                                        <td>&lt;acquisition&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Owner/Agent</td>
+                                        <td>Current Location</td>
+                                        <td>4 - Nom de la personne morale (ou physique) propriétaire du bien déposé</td>
+                                        <td>Ownership/ collecting history, owner</td>
+                                        <td>/</td>
+                                    </tr>
                                 </table>
                             </div>
                         </section>
                         <section>
                             <div class="row">
-                            <table class="table-responsive-xl table-success table-hover table-striped tabalignment col-12">
-                            <tr>
-                                <th>Property</th>
-                                <th>DC</th>
-                                <th>TEI/XML</th>
-                                <th>MARCXML</th>
-                                <th>Unimarc</th>
-                                <th>CDWA</th>
-                                <th>CCO</th>
-                                <th><em>Joconde</em></th>
-                                <th>VAR Core</th>
-                                <th>ISAD(G)</th>
-                            </tr>
-                            <tr>
-                                <td>Date of birth</td> 
-                                <td>dcterms:date</td>
-                                <td>&lt;birth&gt;&lt;date&gt;</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Birth Date</td>
-                                <td>Birth Date</td>
-                                <td>14 - Auteur ou collecteur, fabricant, commanditaire...</td> 
-                                <td>/</td>    
-                                <td>Birth Date</td>
-                            </tr>     
-                            <tr>
-                                <td>Date of creation</td>
-                                <td>dc:created</td>
-                                <td>&lt;creation&gt;&lt;date&gt; [<br> [&lt;correspAction type="sent"&gt;&lt;date&gt;]]</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>Object/Work Type Date</td>
-                                <td>Display Date</td>
-                                <td>15 - Epoque, datation ou date de récolte</td>
-                                <td>Creation Date</td>
-                                <td>Display Date</td>
-                            </tr>
-                            <tr>
-                                <td>Date of publication</td>
-                                <td>dcterms:date</td>
-                                <td>&lt;publicationStmt&gt;&lt;date&gt;</td>
-                                <td>260$c Date of publication</td>
-                                <td>210$d Date of publication</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                                <td>/</td>
-                            </tr>
+                                <table class="table-responsive-xl table-warning table-hover table-striped tabalignment col-12">
+                                    <tr>
+                                        <th>Property</th>
+                                        <th>DC</th>
+                                        <th>TEI/XML</th>
+                                        <th>MARCXML</th>
+                                        <th>Unimarc</th>
+                                        <th>CDWA</th>
+                                        <th>CCO</th>
+                                        <th><em>Joconde</em></th>
+                                        <th>VAR Core</th>
+                                        <th>ISAD(G)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Title</td>
+                                        <td>dc:title</td>
+                                        <td>&lt;title&gt;</td>
+                                        <td>245 $a Title</td>
+                                        <td>200 1 $a Title Proper</td>
+                                        <td>Tutle text</td>
+                                        <td>Title</td>                    
+                                        <td>8 - Désignation du bien</td>
+                                        <td>Title Text</td>
+                                        <td>Title</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Language</td>
+                                        <td>dc:language</td>
+                                        <td>&lt;textLang&gt;</td>
+                                        <td>41 Language code</td>
+                                        <td>101 Language of the Item</td>
+                                        <td>/</td>
+                                        <td>Language</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Subject</td>
+                                        <td>dc:subject</td>
+                                        <td>&lt;msContents&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Subject Matter</td>
+                                        <td>Subject display</td>
+                                        <td>8 - Désignation du bien</td>
+                                        <td>General Subject Terms</td>
+                                        <td>Subject display</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Material</td>
+                                        <td>dcterms:medium</td>
+                                        <td>&lt;supportDesc marterial="..."&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Materials/Techniques Description</td>
+                                        <td>Material (controlled)</td>
+                                        <td>10 - Matières ou matériaux</td>
+                                        <td>Materials description</td>
+                                        <td>Material</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Technique</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Materials/Techniques Description</td>
+                                        <td>Technique (controlled)</td>
+                                        <td>11 - Technique de réalisation</td>
+                                        <td>Technique description</td>
+                                        <td>Technique</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rights</td>
+                                        <td>dc:rights</td>
+                                        <td>&lt;availability&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Copyright/Restrictions</td>
+                                        <td>/</td>
+                                        <td>16 - Fonction d'usage</td>
+                                        <td>Copyrights statement</td>
+                                        <td>/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Type</td>
+                                        <td>dc:type</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Object/Work Type</td>
+                                        <td>Work type (controlled)</td>
+                                        <td>8 - Désignation du bien</td>
+                                        <td>Object/Work Type</td>
+                                        <td>Work Type</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Description</td>
+                                        <td>dc:description</td>
+                                        <td>&lt;msContents&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Descriptive Note</td>
+                                        <td>Description</td>
+                                        <td>8 - Désignation du bien</td>
+                                        <td>/</td>
+                                        <td>Description element</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Identifier</td>
+                                        <td>dc:identifier</td>
+                                        <td>&lt;idno&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Object/Work Record ID</td>
+                                        <td>001 Record Identifier</td>
+                                        <td>1 - N° inventaire</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Source</td>
+                                        <td>dc:source</td>
+                                        <td>&lt;source&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Citations</td>
+                                        <td>Source (controlled)</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Format</td>
+                                        <td>dc:format</td>
+                                        <td>&lt;dimensions&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Format/Size</td>
+                                        <td>Format</td>
+                                        <td>12 - Mesures</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Note</td>
+                                        <td>/</td>
+                                        <td>&lt;note&gt</td>
+                                        <td>500 $a General note</td>
+                                        <td>300 $a Text of note</td>
+                                        <td>Remarks</td>
+                                        <td>Other Descriptive Notes</td>
+                                        <td>18 - Observations</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
                                 </table>
                             </div>
-                    </section>
+                        </section>
+                        <section>
+                            <div class="row">
+                                <table class="table-responsive-xl table-danger table-hover table-striped tabalignment col-12">
+                                    <tr>
+                                        <th>Property</th>
+                                        <th>DC</th>
+                                        <th>TEI/XML</th>
+                                        <th>MARCXML</th>
+                                        <th>Unimarc</th>
+                                        <th>CDWA</th>
+                                        <th>CCO</th>
+                                        <th><em>Joconde</em></th>
+                                        <th>VAR Core</th>
+                                        <th>ISAD(G)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Place of birth</td> 
+                                        <td>dcterms:coverage</td>
+                                        <td>&lt;birth&gt;&lt;placeName&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Birth Place</td>
+                                        <td>Nationality</td>
+                                        <td>14 - Auteur ou collecteur, fabricant, commanditaire...</td>
+                                        <td>Birth Place</td>
+                                        <td>Nationality</td>    
+                                    </tr>    
+                                    <tr>
+                                        <td>Place of creation</td>
+                                        <td>dcterms:coverage</td>
+                                        <td>&lt;creation&gt;&lt;placeName&gt; [<br> [&lt;correspAction type="sent"&gt;&lt;placeName&gt;]</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Creation Place/Original Location</td>
+                                        <td>Creation Location display</td>
+                                        <td>17 - Provenance géographique</td>
+                                        <td>Creation Place/Original Location</td>    
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Place of publication</td>
+                                        <td>dcterms:coverage</td>
+                                        <td>&lt;pubPlace&gt;</td>
+                                        <td>260 $a Place of publication</td>
+                                        <td>210$a Place of publication</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Original location</td> 
+                                        <td>dc:coverage</td>
+                                        <td>&lt;origPlace&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Provenance Description</td>
+                                        <td>Former Locations</td>
+                                        <td>17 - Provenance géographique</td>
+                                        <td>Creation Place/Original Location</td>    
+                                        <td>/</td>
+                                    </tr>    
+                                    <tr>
+                                        <td>Current location</td>
+                                        <td>dc:coverage</td>
+                                        <td>&lt;place&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Current Location Description</td>
+                                        <td>Current Location display</td>
+                                        <td>17 - Provenance géographique</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>        
+                                </table>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="row">
+                                <table class="table-responsive-xl table-success table-hover table-striped tabalignment col-12">
+                                    <tr>
+                                        <th>Property</th>
+                                        <th>DC</th>
+                                        <th>TEI/XML</th>
+                                        <th>MARCXML</th>
+                                        <th>Unimarc</th>
+                                        <th>CDWA</th>
+                                        <th>CCO</th>
+                                        <th><em>Joconde</em></th>
+                                        <th>VAR Core</th>
+                                        <th>ISAD(G)</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Date of birth</td> 
+                                        <td>dcterms:date</td>
+                                        <td>&lt;birth&gt;&lt;date&gt;</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Birth Date</td>
+                                        <td>Birth Date</td>
+                                        <td>14 - Auteur ou collecteur, fabricant, commanditaire...</td> 
+                                        <td>/</td>    
+                                        <td>Birth Date</td>
+                                    </tr>     
+                                    <tr>
+                                        <td>Date of creation</td>
+                                        <td>dc:created</td>
+                                        <td>&lt;creation&gt;&lt;date&gt; [<br> [&lt;correspAction type="sent"&gt;&lt;date&gt;]]</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>Object/Work Type Date</td>
+                                        <td>Display Date</td>
+                                        <td>15 - Epoque, datation ou date de récolte</td>
+                                        <td>Creation Date</td>
+                                        <td>Display Date</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Date of publication</td>
+                                        <td>dcterms:date</td>
+                                        <td>&lt;publicationStmt&gt;&lt;date&gt;</td>
+                                        <td>260$c Date of publication</td>
+                                        <td>210$d Date of publication</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                        <td>/</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </section>
                     </div>
                 </div>
-        </div>
-                <div id="TheoModel" class="Modelssection2">
-                    <h2 class="models-p">Theoretical Model</h2>
-                    <p class="models-p">The theoretical model allows to reach the level of data interpretation through natural language. It describes the selected items and information concerning agents, places, dates and subjects/concepts. This process allows to produce an enhanced version of the original E/R, capable of offering a more detailed analysis of the considered domain</p>
-                    <img src="Theoretical-model.drawio.png" class="mapinmodel">
+            </div>
+            <div id="TheoModel" class="Modelssection2">
+                <h2 class="models-p">Theoretical Model</h2>
+                <p class="models-p">The theoretical model allows to reach the level of data interpretation through natural language. It describes the selected items and information concerning agents, places, dates and subjects/concepts. This process allows to produce an enhanced version of the original E/R, capable of offering a more detailed analysis of the considered domain</p>
+                <img src="Theoretical-model.drawio.png" class="mapinmodel">
+            </div>
+            <div id="ConcModel" class="Modelssection1">
+                <h2 class="models-p">Conceptual Model</h2>
+                <p class="models-p">The conceptual model can be considered a formal representation of the theoretical model through an ontological approach. It is constructed reusing  existing schemas, vocabularies, and ontologies and can be visualised graphically through specific softwares, such as the graphical framework Graphoo.</p>
+                <img src="4_Conceptual Model.jpeg" class="mapinmodel">
+            </div>
+            <footer class="text-center">
+                <div class="text-center p-3">
+                        <b>A Linked Open Data project</b><br><br>
+                        MA "Digital Humanities and Digital Knowledge", University of Bologna <br>
+                           Course "Knowledge Organization and Cultural Heritage" <br>
+                        
+                    <div>
+                        <small>Powered by Bootstrap</small>
+                        <a
+                            class="btn btn-link btn-floating btn-lg text-dark m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark">
+                            <i class="fa fa-github"></i>
+                        </a><br>
+                    </div>
+                    © 2022 Copyright: OFF-LOD
                 </div>
-                <div id="ConcModel" class="Modelssection1">
-                    <h2 class="models-p">Conceptual Model</h2>
-                    <p class="models-p">The conceptual model can be considered a formal representation of the theoretical model through an ontological approach. It is constructed reusing  existing schemas, vocabularies, and ontologies and can be visualised graphically through specific softwares, such as the graphical framework Graphoo.</p>
-                    <img src="4_Conceptual Model.jpeg" class="mapinmodel">
-                </div>
-    </body>
-</html>
+            </footer>
+        </body>
+        </html>

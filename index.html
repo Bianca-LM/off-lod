@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-widht, inital-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/cssfile.css"/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
 </head>
 <body>
@@ -17,7 +18,7 @@
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li class="dropdown"><a href="models.html"><span>Models</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="models.html#conceptualMap">Conceptual model</a></li>
+                            <li><a href="models.html#conceptualMap">Conceptual map</a></li>
                             <li><a href="models.html#ERModel">E/R model</a></li>
                             <li class="dropdown"><a href="#"><span>Metadata</span> <i class="bi bi-chevron-right"></i></a>
                                 <ul>
@@ -29,11 +30,11 @@
                             <li><a href="models.html#ConcModel">Conceptual model</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="#"><span>Data</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="dataRdf.html"><span>Data</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Data description</a></li>
-                            <li><a href="#">RDF production</a></li>
-                            <li><a href="#">RDF visualization</a></li>
+                            <li><a href="dataRdf.html#DataDesc">Data description</a></li>
+                            <li><a href="dataRdf.html#Turtle">RDF production</a></li>
+                            <li><a href="dataRdf.html#RDFVisualization">RDF visualization</a></li>
                         </ul>
                     </li>
                     <li><a class="nav-link scrollto" href="#teampresentation">Contact</a></li>
@@ -643,13 +644,24 @@
                 </div>
             </div>    
         </div>
+
         <footer class="text-center">
             <div class="text-center p-3">
-                    <p>A Linked Open Data project</p>
-                    <p>Created for the course "Knowledge Organization and Cultural Heritage" by DHDK's students</p>
+                    <b>A Linked Open Data project</b><br><br>
+                    MA "Digital Humanities and Digital Knowledge", University of Bologna <br>
+                       Course "Knowledge Organization and Cultural Heritage" <br>
+                    
                 <div>
-                    © 2022 Copyright: OFF-LOD
-                </div> 
+                    <small>Powered by Bootstrap</small>
+                    <a
+                        class="btn btn-link btn-floating btn-lg text-dark m-1"
+                        href="#!"
+                        role="button"
+                        data-mdb-ripple-color="dark">
+                        <i class="fa fa-github"></i>
+                    </a><br>
+                </div>
+                © 2022 Copyright: OFF-LOD
             </div>
         </footer>
         
