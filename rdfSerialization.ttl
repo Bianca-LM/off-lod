@@ -20,3 +20,120 @@
 @prefix fabio: <http://purl.org/spar/fabio>. 
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+
+<item/lib/editio-p> a fabio:book;
+	 
+
+
+
+-------------------------------------
+
+
+Book, crm:P102_has_title, Orlando Furioso
+Book, crm:P108_was_produced_by, Ludovico Ariosto
+Book, fabio:has_publication_date, 1516
+Book, fabio:has_publisher, Giovanni Mazocco dal Bondeno
+Book, fabio:has_place_of_publication, Ferrara
+Book, crm:P52_has_current_owner, Biblioteca Nazionale Centrale
+Book, crm:P55_has_current_location, Florence
+Book, crm:P45_consists_of, paper
+Book, crm:P72_has_language, it
+Book, bf:editionStatement, ?
+
+Book, crm:P102_has_title, Orlando furioso in English heroical verse, by Iohn Haringto[n]
+Book, crm:P108_was_produced_by, Ludovico Ariosto
+Book, fabio:has_publication_date, 1591
+Book, fabio:has_publisher, Richard Field
+Book, fabio:has_place_of_publication, London
+Book, crm:P52_has_current_owner, Boston Public Library
+Book, crm:P55_has_current_location, Boston
+Book, crm:P45_consists_of, paper
+Book, crm:P72_has_language, en
+Book, crm:P73_is_translation_of, Orlando Furioso
+Book, crm:P4_has_time-span, ?
+
+
+Essay, crm:P102_has_title, Lezioni americane : sei proposte per il prossimo millennio
+Essay, crm:P108_was_produced_by, Italo Calvino
+Essay, fabio:has_publication_date, 1988
+Essay, bf:creationDate, 1988
+Essay, fabio:has_publisher, Garzanti
+Essay, fabio:has_place_of_publication, Milan 
+Essay, crm:P52_has_current_owner, Biblioteca Salaborsa
+Essay, crm:P55_has_current_location, Bologna
+Essay, crm:P45_consists_of, paper
+Essay, crm:P72_has_language, it
+Essay, crm:P67_refers_to, Orlando Furioso
+
+Manuscript, crm:P102_has_title, Ms.S.Mart.353
+Manuscript, crm:P108_was_produced_by, Ludovico Ariosto
+Manuscript, crm:P4_has_time-span, 1501-1600
+Manuscript, crm:P52_has_current_owner, Biblioteca nazionale Vittorio Emanuele III
+Manuscript, crm:P55_has_current_location, Naples
+Manuscirpt, crm:P45_consists_of, paper
+Manuscript, crm:P72_has_language, it
+
+Letter, crm:P108_was_produced_by, Ludovico Ariosto
+Letter, fabio:has_place_of_publication, Ferrara
+Letter, crm:P52_has_current_owner, Archivio di Stato
+Letter, crm:P55_has_current_location, Modena
+Letter, crm:P72_has_language, it
+Letter, bf:creationDate, 02/23/1531
+Letter, crm:P67_refers_to, Orlando Furioso
+
+Human-Made Thing, crm:P102_has_title, Portrait of Gerolamo (?) Barbarigo
+Human-Made Thing, crm:P108_was_produced_by, Titian
+Human-Made Thing, crm:P4_has_time-span, about 1510
+Human-Made Thing, crm:P32_used_general_technique, painting
+Human-Made Thing,	crm:P52_has_current_owner, The National Gallery
+Human-Made Thing, crm:P55_has_current_location, London
+Human-Made Thing, crm:P45_consists_of, oil on canvas
+Human-Made Thing, crm:P62_depicts, Ludovico Ariosto
+
+Play, crm:P102_has_title, Orlando Furioso
+Play, crm:P108_was_produced_by, Luca Ronconi 
+Play, fabio:has_creation_date, 1969
+Play, crm:P72_has_language, it
+Play, crm:P129_is_about, Orlando Furioso
+
+Archival Resource, crm:P102_has_title, ?
+Archival Resource, crm:P108_was_produced_by, Alessandro Cervellati
+Archival Resource, crm:P45_consists_of, Ink and Watercolor
+Archival Resource, fabio:has_place_of_publication, Bologna
+Archival Resource, fabio:has_publication_date, 1969
+Archival Resource, crm:P52_has_current_owner, Biblioteca dell'Archiginnasio
+Archival Resource, crm:P55_has_current_location, Bologna
+Archival Resource, crm:P138_represents, Orlando Furioso (play)
+Archival Resource, crm:P4_has_time-span, ?
+Archival Resource, fabio:has_publisher, ?
+
+Human-Made Thing, crm:P102_has_title, Alcina riceve Ruggero nel suo castello
+Human-Made Thing, crm:P108_was_produced_by, Nicolò dell'Abate 
+Human-Made Thing, crm:P4_has_time-span, 1548-1550
+Human-Made Thing, crm:P32_used_general_technique, fresco
+Human-Made Thing,	crm:P52_has_current_owner, Pinacoteca Nazionale di Bologna
+Human-Made Thing, crm:P55_has_current_location, Bologna
+Human-Made Thing, crm:P45_consists_of, ?
+Human-Made Thing, crm:P62_depicts, Ruggero
+
+Human-Made Object, crm:P102_has_title, Roland furieux
+Human-Made Object, crm:P108_was_produced_by, Jean Bernard Duseigneur
+Human-Made Object, crm:P4_has_time-span, ?
+Human-Made Object, bf:creationDate, 1867
+Human-Made Object, crm:P33_used_specific_technique, sculpture
+Human-Made Object, crm:P52_has_current_owner, Louvre
+Human-Made Object, crm:P55_has_current_location, Paris
+Human-Made Object, crm:P45_consists_of, bronze
+Human-Made Object, crm:P62_depicts, Orlando
+Human-Made Object, fabio:is_exemplar_of, ?
+
+Human-Made Object, crm:P102_has_title, Cor de Roland
+Human-Made Object, crm:P108_was_produced_by, Jean Bernard Duseigneur
+Human-Made Object, crm:P4_has_time-span, XI century
+Human-Made Object, crm:P33_used_specific_technique, sculpture
+Human-Made Object, crm:P52_has_current_owner, Museo Paul-Dupuy, Orlando 
+Human-Made Object, crm:P55_has_current_location, Toulouse
+Human-Made Object, crm:P45_consists_of, ivory
+Human-Made Object, fabio:is_exemplar_of, olifant
+Come specificare che il proprietario è Orlando?
