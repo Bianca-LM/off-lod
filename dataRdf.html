@@ -52,29 +52,9 @@
     
     <!-- ADD THE CONTENT HERE -->
     
-    <div id="DataDesc" class="Modelssection1">
-        <h2 class="models-p">Data Description</h2>
-        <p class="models-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima unde adipisci molestiae accusantium porro? Ullam, nobis provident! Aperiam quam quibusdam ullam odio, tempora, voluptatem molestiae commodi sed corrupti quis in.</p>
-    </div>
-    <div id="Turtle" class="Modelssection2">
-        <h2 class="models-p">RDF Production</h2>
-        <p class="models-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima unde adipisci molestiae accusantium porro? Ullam, nobis provident! Aperiam quam quibusdam ullam odio, tempora, voluptatem molestiae commodi sed corrupti quis in.</p>
-        <div class="snippet">
-            <pre class="line-numbers" style="background-color: white">
-                <code class="language-markup" style="padding-left: 0px">
-                    @prefix: ...
-                    @prefix: ...
-                </code>
-            </pre>
-        </div>
-    </div>
-    <div id="RDFVisualization" class="Modelssection1">
-        <h2 class="models-p">RDF Visualization</h2>
-        <p class="models-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima unde adipisci molestiae accusantium porro? Ullam, nobis provident! Aperiam quam quibusdam ullam odio, tempora, voluptatem molestiae commodi sed corrupti quis in.</p>
-    </div>
-                <div id="Data-desc" class="Modelssection2">
-            <h2 class="models-p">Data Description</h2>
-                <div class="tabs">
+    <div id="Data-desc" class="Modelssection1">
+       <h2 class="models-p">Data Description</h2>
+       <div class="tabs">
   
                         <input type="radio" id="tab5" name="tab-control" checked>
                         <input type="radio" id="tab6" name="tab-control">
@@ -84,9 +64,9 @@
                       </svg><br><span>Bibliographic Resources</span></label></li>
                           <li title="Archival Resources"><label for="tab6" role="button"><svg viewBox="0 0 24 24"><path d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" />
                       </svg><br><span>Archival Resources</span></label></li>  
-                          <li title="Returns"><label for="tab7" role="button"><svg viewBox="0 0 24 24">
+                          <li title="Artifacts"><label for="tab7" role="button"><svg viewBox="0 0 24 24">
                           <path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z" />
-                      </svg><br><span>Returns</span></label></li>
+                      </svg><br><span>Artifacts</span></label></li>
                         </ul>
                         
                         <div class="slider second-slider"><div class="indicator"></div></div>
@@ -455,13 +435,231 @@
                                             <td> Orlando Furioso</td>
                                         </tr>
                                 </section>
-                            <section>
-                                <h2>Returns</h2>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dicta vero rerum? Eaque repudiandae architecto libero reprehenderit aliquam magnam ratione quidem? Nobis doloribus molestiae enim deserunt necessitatibus eaque quidem incidunt.</section>
-                        </div>
+                                <section>
+                                <h2>Artifacts</h2>
+                                    <div class="table-datadesc">
+                                    <table class="table-responsive-xl table-hover table-info table-striped tabalignment col-12 separate-table">
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Property</th>
+                                            <th>Object</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P102_has_title</td>
+                                            <td> Portrait of Gerolamo (?) Barbarigo</td>
+                                        </tr>
+                                        <tr>
+                                           <td>Human-Made Thing</td>
+                                           <td> crm:P108_was_produced_by</td>
+                                           <td> Titian</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P4_has_time-span</td>
+                                            <td> about 1510</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P32_used_general_technique</td>
+                                            <td> painting</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td>	crm:P52_has_current_owner</td>
+                                            <td> The National Gallery</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P55_has_current_location</td>
+                                            <td> London</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P45_consists_of</td>
+                                            <td> oil on canvas</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P62_depicts</td>
+                                            <td> Ludovico Ariosto</td>
+                                        </tr>
+                                        </table>
+                                    </div>
+                                    <div class="table-datadesc">
+                                    <table class="table-responsive-xl table-hover table-striped tabalignment col-12 separate-table">
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Property</th>
+                                            <th>Object</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P102_has_title</td>
+                                            <td> Alcina riceve Ruggero nel suo castello</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P108_was_produced_by</td>
+                                            <td> Nicolò dell&#39;Abate </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P4_has_time-span</td>
+                                            <td> 1548-1550</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P32_used_general_technique</td>
+                                            <td> fresco</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P52_has_current_owner</td>
+                                            <td> Pinacoteca Nazionale di Bologna</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P55_has_current_location</td>
+                                            <td> Bologna</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P45_consists_of</td>
+                                            <td> ?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td> crm:P62_depicts</td>
+                                            <td> Ruggero</td>
+                                        </tr>
+                                        </table>
+                                    </div>
+                                    <div class="table-datadesc">
+                                    <table class="table-responsive-xl table-hover table-info table-striped tabalignment col-12 separate-table">
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Property</th>
+                                            <th>Object</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P102_has_title</td>
+                                            <td> Roland furieux</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P108_was_produced_by</td>
+                                            <td> Jean Bernard Duseigneur</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P4_has_time-span</td>
+                                            <td> ?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> bf:creationDate</td>
+                                            <td> 1867</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P33_used_specific_technique</td>
+                                            <td> sculpture</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P52_has_current_owner</td>
+                                            <td> Louvre</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P55_has_current_location</td>
+                                            <td> Paris</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P45_consists_of</td>
+                                            <td> bronze</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P62_depicts</td>
+                                            <td> Orlando</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> fabio:is_exemplar_of</td>
+                                            <td> ?</td>
+                                        </tr>
+                                        </table>
+                                    </div>
+                                    <div class="table-datadesc">
+                                    <table class="table-responsive-xl table-hover table-striped tabalignment col-12 separate-table">
+                                        <tr>
+                                            <th>Subject</th>
+                                            <th>Property</th>
+                                            <th>Object</th>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P102_has_title</td>
+                                            <td> Cor de Roland</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P4_has_time-span</td>
+                                            <td> XI century</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P33_used_specific_technique</td>
+                                            <td> sculpture</td>
+                                        </tr>
+                                            <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P52_has_current_owner</td>
+                                            <td> Museo Paul-Dupuy/Orlando </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P55_has_current_location</td>
+                                            <td> Toulouse</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P45_consists_of</td>
+                                            <td> ivory</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> fabio:is_exemplar_of</td>
+                                            <td> olifant</td>
+                                        </tr>
+                                     </table>
+                                   </div>
+                                </section>
+                            </div>
                       </div>
-                      
                 </div>
+    </div>
+    <div id="Turtle" class="Modelssection2">
+        <h2 class="models-p">RDF Production</h2>
+        <p class="models-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima unde adipisci molestiae accusantium porro? Ullam, nobis provident! Aperiam quam quibusdam ullam odio, tempora, voluptatem molestiae commodi sed corrupti quis in.</p>
+        <div class="snippet">
+            <pre class="line-numbers" style="background-color: white">
+                <code class="language-markup" style="padding-left: 0px">
+                    @prefix: ...
+                    @prefix: ...
+                </code>
+            </pre>
+        </div>
+    </div>
+    <div id="RDFVisualization" class="Modelssection1">
+        <h2 class="models-p">RDF Visualization</h2>
+        <p class="models-p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima unde adipisci molestiae accusantium porro? Ullam, nobis provident! Aperiam quam quibusdam ullam odio, tempora, voluptatem molestiae commodi sed corrupti quis in.</p>
+    </div>
+                
     
     <footer class="text-center">
         <div class="text-center p-3">
