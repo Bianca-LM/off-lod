@@ -1,139 +1,158 @@
-# Orlando furioso      ===>   https://bianca-lm.github.io/off-lod/text/orlando-furioso
-# Letter to Bembo	   ===>   https://bianca-lm.github.io/off-lod/item/arc/letter-bembo
-# Portrait by Titian   ===>   https://bianca-lm.github.io/off-lod/item/mus/portrait-titian
-# Editio princeps      ===>   https://bianca-lm.github.io/off-lod/item/lib/ms
-# Manuscript           ===>   https://bianca-lm.github.io/off-lod/item/lib/editio-p
-# English translation  ===>   https://bianca-lm.github.io/off-lod/item/lib/transl-en
-# Fresco			   ===>   https://bianca-lm.github.io/off-lod/item/mus/fresco-pnb
-# Cor de Roland        ===>   https://bianca-lm.github.io/off-lod/item/mus/olifant
-# Roland furieux       ===>   https://bianca-lm.github.io/off-lod/item/mus/roland-louvre
-# Six memos, Calvino   ===>   https://bianca-lm.github.io/off-lod/item/lib/6memos-calvino
-# Play                 ===>   https://bianca-lm.github.io/off-lod/item/arc/play-ronconi
-# Flyer                ===>   https://bianca-lm.github.io/off-lod/item/arc/flyer-geniusbo
-# Ariosto              ===>   https://bianca-lm.github.io/off-lod/person/lud-ariosto
-# Ruggero              ===>   https://bianca-lm.github.io/off-lod/person/fictious/
-# Orlando              ===>   https://bianca-lm.github.io/off-lod/person/fictious/
-
-
 @base <https://bianca-lm.github.io/off-lod/>.
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/7.1.1/> .
 @prefix fabio: <http://purl.org/spar/fabio>. 
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix frbr: <http://purl.org/vocab/frbr/core##>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix viaf: <https://viaf.org/viaf/>.
+@prefix geonames: <https://www.geonames.org/>.
+@prefix schema: <https://schema.org/>.
+@prefix aat: <http://vocab.getty.edu/page/aat/>.
+@prefix oad: <http://culturalis.org/oad#>.
 
+<text/printed/editio-p> a fabio:book;
+	crm:P102_has_title "Orlando Furioso"@it; 
+	crm:P108_was_produced_by viaf:71386455;
+	fabio:has_publication_date "1516"^^xsd:gYear;
+	fabio:has_publisher viaf:131996385;
+	fabio:has_place_of_publication geonames:6299592;
+	crm:P52_has_current_owner viaf:143744216;
+	crm:P55_has_current_location geonames:3176959;
+	crm:P45_consists_of @aat:300014109;
+	crm:P72_has_language "it"^^xsd:language;
+	fabio:isPortrayalOf viaf:179842618; 
+	# bf:editionStatement ? 
 
-<item/lib/editio-p> a fabio:book;
-	 
+<text/printed/transl-en> a fabio:book;
+	crm:P102_has_title "Orlando furioso in English heroical verse by Iohn Haringto[n]"@en; 
+	crm:P108_was_produced_by viaf:71386455;
+	fabio:has_publication_date "1591"^^xsd:gYear;
+	fabio:has_publisher viaf:12211351;
+	fabio:has_place_of_publication geonames:12042173;
+	crm:P52_has_current_owner viaf:133435180;
+	crm:P55_has_current_location geoname:4931029;
+	crm:P45_consists_of @aat:300014109;
+	crm:P73_is_translation_of viaf:179842618; 
+	crm:P72_has_language "en"^^xsd:language;
+	# crm:P4_has_time-span ? crm:P72_has_language "it"^^xsd:language;
 
+<text/essay/6memos-calvino> a fabio:essay;
+	crm:P102_has_title "Lezioni americane : sei proposte per il prossimo millennio"@it;
+	crm:P108_was_produced_by viaf:8520;
+	fabio:has_publication_date "1988"^^xsd:gYear;
+	bf:creationDate "1988"^^xsd:gYear;
+	fabio:has_publisher viaf:148937343;
+	fabio:has_place_of_publication geonames:3173434; 
+	crm:P52_has_current_owner viaf:139355594;
+	crm:P55_has_current_location geonames:3181927;
+	crm:P45_consists_of @aat:300014109;
+	crm:P67_refers_to viaf:179842618;
+	crm:P72_has_language "it"^^xsd:language;
 
+<text/ms> a fabio:manuscript;
+	crm:P102_has_title "Ms.S.Mart.353"^^xsd:string;
+	crm:P108_was_produced_by viaf:71386455;
+	crm:P4_has_time-span "1500-1600"^^xsd:string; #NOT OK!!!! *******
+	crm:P52_has_current_owner viaf:123993876;
+	crm:P55_has_current_location geonames:3172391;
+	crm:P45_consists_of @aat:300014109;
+	crm:P72_has_language "it"^^xsd:language;
+	fabio:isPortrayalOf viaf:179842618; 
 
--------------------------------------
+<text/letter/to-bembo> a fabio:letter;
+	crm:P108_was_produced_by viaf:71386455;
+	fabio:has_place_of_publication geonames:6299592;
+	crm:P52_has_current_owner viaf:151296005;
+	crm:P55_has_current_location geonames:6541461
+	crm:P72_has_language "it"^^xsd:language;
+	bf:creationDate "1531-02-23"^^xsd:date;
+	crm:P67_refers_to viaf:179842618;
+	schema:recipient viaf:54144140;
 
+<painting/portrait-titian> a crm:E22_Human-Made_Object;
+	crm:P102_has_title "Portrait of Gerolamo Barbarigo"@en;
+	crm:P108_was_produced_by viaf:109266837;
+	crm:P4_has_time-span "1510"xsd:gYear;
+	crm:P32_used_general_technique aat:300033618;
+	crm:P52_has_current_owner viaf:144868906;
+	crm:P55_has_current_location geonames:12042173;
+	crm:P45_consists_of aat:300033799;
+	crm:P45_consists_of aat:300014078;
+	crm:P62_depicts viaf:71386455;
 
-Book, crm:P102_has_title, Orlando Furioso
-Book, crm:P108_was_produced_by, Ludovico Ariosto
-Book, fabio:has_publication_date, 1516
-Book, fabio:has_publisher, Giovanni Mazocco dal Bondeno
-Book, fabio:has_place_of_publication, Ferrara
-Book, crm:P52_has_current_owner, Biblioteca Nazionale Centrale
-Book, crm:P55_has_current_location, Florence
-Book, crm:P45_consists_of, paper
-Book, crm:P72_has_language, it
-Book, bf:editionStatement, ?
+<play-ronconi> a fabio:play;
+	crm:P102_has_title "Orlando Furioso"@it;
+	crm:P108_was_produced_by viaf:79034626;
+	crm:P108_was_produced_by viaf:66478877;
+	fabio:has_creation_date "1969"xsd:gYear;
+	crm:P72_has_language "it"^^xsd:language;
+	crm:P129_is_about viaf:179842618;
+	crm:P7_took_place_at geonames:2950159;
 
-Book, crm:P102_has_title, Orlando furioso in English heroical verse, by Iohn Haringto[n]
-Book, crm:P108_was_produced_by, Ludovico Ariosto
-Book, fabio:has_publication_date, 1591
-Book, fabio:has_publisher, Richard Field
-Book, fabio:has_place_of_publication, London
-Book, crm:P52_has_current_owner, Boston Public Library
-Book, crm:P55_has_current_location, Boston
-Book, crm:P45_consists_of, paper
-Book, crm:P72_has_language, en
-Book, crm:P73_is_translation_of, Orlando Furioso
-Book, crm:P4_has_time-span, ?
+<flyer-geniusbo> a oad:ArchivalResource;
+	crm:P108_was_produced_by viaf:203064069;
+	crm:P45_consists_of aat:300015012;
+	crm:P45_consists_of aat:300053363;
+	fabio:has_place_of_publication geonames:3181927;
+	fabio:has_publication_date "1969"xsd:gYear;
+	crm:P52_has_current_owner viaf:5284149296283180670004;
+	crm:P55_has_current_location geonames:3181927;
+	crm:P138_represents <play-ronconi>;
+	# crm:P4_has_time-span ? fabio:has_publisher ? crm:P102_has_title ? Authority geniusbo?
 
+<person/fictious/ruggero> a foaf:Person;
+	frbr:subjectOf viaf:179842618;
+	foaf:knows viaf:5722596;
 
-Essay, crm:P102_has_title, Lezioni americane : sei proposte per il prossimo millennio
-Essay, crm:P108_was_produced_by, Italo Calvino
-Essay, fabio:has_publication_date, 1988
-Essay, bf:creationDate, 1988
-Essay, fabio:has_publisher, Garzanti
-Essay, fabio:has_place_of_publication, Milan 
-Essay, crm:P52_has_current_owner, Biblioteca Salaborsa
-Essay, crm:P55_has_current_location, Bologna
-Essay, crm:P45_consists_of, paper
-Essay, crm:P72_has_language, it
-Essay, crm:P67_refers_to, Orlando Furioso
+<person/fictious/orlando> a foaf:Person;
+	frbr:subjectOf viaf:179842618;
+	owl:sameAs viaf:5722596;
+	foaf:knows <person/fictious/ruggero>;
 
-Manuscript, crm:P102_has_title, Ms.S.Mart.353
-Manuscript, crm:P108_was_produced_by, Ludovico Ariosto
-Manuscript, crm:P4_has_time-span, 1501-1600
-Manuscript, crm:P52_has_current_owner, Biblioteca nazionale Vittorio Emanuele III
-Manuscript, crm:P55_has_current_location, Naples
-Manuscirpt, crm:P45_consists_of, paper
-Manuscript, crm:P72_has_language, it
+<painting/fresco-pnb> a crm:E71_Human-Made_Thing;
+	crm:P102_has_title "Alcina riceve Ruggero nel suo castello"@it;
+	crm:P108_was_produced_by viaf:88804962;
+	crm:P4_has_time-span "1548-1550"^^xsd:string; #NOT OK!!!! *******
+	crm:P32_used_general_technique aat:300177433;
+	crm:P52_has_current_owner viaf:141530565;
+	crm:P55_has_current_location geonames:3181927;
+	crm:P62_depicts <person/fictious/ruggero>; 
+	# crm:P45_consists_of ?
 
-Letter, crm:P108_was_produced_by, Ludovico Ariosto
-Letter, fabio:has_place_of_publication, Ferrara
-Letter, crm:P52_has_current_owner, Archivio di Stato
-Letter, crm:P55_has_current_location, Modena
-Letter, crm:P72_has_language, it
-Letter, bf:creationDate, 02/23/1531
-Letter, crm:P67_refers_to, Orlando Furioso
+<statue/roland-louvre> a crm:E22_Human-Made_Object;
+	crm:P102_has_title "Roland furieux"@fr;
+	crm:P108_was_produced_by viaf:61822111;
+	bf:creationDate "1867"xsd:gYear;
+	crm:P33_used_specific_technique aat:300047090;
+	crm:P52_has_current_owner viaf:257711507;
+	crm:P55_has_current_location geonames:2968815;
+	crm:P45_consists_of aat:300010957;
+	crm:P62_depicts <person/fictious/orlando>;
+	# fabio:is_exemplar_of ? 	crm:P4_has_time-span ?
 
-Human-Made Thing, crm:P102_has_title, Portrait of Gerolamo (?) Barbarigo
-Human-Made Thing, crm:P108_was_produced_by, Titian
-Human-Made Thing, crm:P4_has_time-span, about 1510
-Human-Made Thing, crm:P32_used_general_technique, painting
-Human-Made Thing,	crm:P52_has_current_owner, The National Gallery
-Human-Made Thing, crm:P55_has_current_location, London
-Human-Made Thing, crm:P45_consists_of, oil on canvas
-Human-Made Thing, crm:P62_depicts, Ludovico Ariosto
+Human-Made Object a crm:E22_Human-Made_Object;
+	crm:P102_has_title "Cor de Roland"@fr;
+	crm:P4_has_time-span "1000-1100"^^xsd:string; #NOT OK!!!! *******
+	crm:P33_used_specific_technique aat:300010957;
+	crm:P52_has_current_owner viaf:137832672;
+	crm:P55_has_current_location geonames:6453974;
+	crm:P45_consists_of aat:300011857;
+	fabio:is_exemplar_of aat:300042763;
+	# 	crm:P108_was_produced_by Jean Bernard Duseigneur È ANONIMO
 
-Play, crm:P102_has_title, Orlando Furioso
-Play, crm:P108_was_produced_by, Luca Ronconi 
-Play, fabio:has_creation_date, 1969
-Play, crm:P72_has_language, it
-Play, crm:P129_is_about, Orlando Furioso
+# -------------------------------------------------------------------------------------------
 
-Archival Resource, crm:P102_has_title, ?
-Archival Resource, crm:P108_was_produced_by, Alessandro Cervellati
-Archival Resource, crm:P45_consists_of, Ink and Watercolor
-Archival Resource, fabio:has_place_of_publication, Bologna
-Archival Resource, fabio:has_publication_date, 1969
-Archival Resource, crm:P52_has_current_owner, Biblioteca dell'Archiginnasio
-Archival Resource, crm:P55_has_current_location, Bologna
-Archival Resource, crm:P138_represents, Orlando Furioso (play)
-Archival Resource, crm:P4_has_time-span, ?
-Archival Resource, fabio:has_publisher, ?
-
-Human-Made Thing, crm:P102_has_title, Alcina riceve Ruggero nel suo castello
-Human-Made Thing, crm:P108_was_produced_by, Nicolò dell'Abate 
-Human-Made Thing, crm:P4_has_time-span, 1548-1550
-Human-Made Thing, crm:P32_used_general_technique, fresco
-Human-Made Thing,	crm:P52_has_current_owner, Pinacoteca Nazionale di Bologna
-Human-Made Thing, crm:P55_has_current_location, Bologna
-Human-Made Thing, crm:P45_consists_of, ?
-Human-Made Thing, crm:P62_depicts, Ruggero
-
-Human-Made Object, crm:P102_has_title, Roland furieux
-Human-Made Object, crm:P108_was_produced_by, Jean Bernard Duseigneur
-Human-Made Object, crm:P4_has_time-span, ?
-Human-Made Object, bf:creationDate, 1867
-Human-Made Object, crm:P33_used_specific_technique, sculpture
-Human-Made Object, crm:P52_has_current_owner, Louvre
-Human-Made Object, crm:P55_has_current_location, Paris
-Human-Made Object, crm:P45_consists_of, bronze
-Human-Made Object, crm:P62_depicts, Orlando
-Human-Made Object, fabio:is_exemplar_of, ?
-
-Human-Made Object, crm:P102_has_title, Cor de Roland
-Human-Made Object, crm:P108_was_produced_by, Jean Bernard Duseigneur
-Human-Made Object, crm:P4_has_time-span, XI century
-Human-Made Object, crm:P33_used_specific_technique, sculpture
-Human-Made Object, crm:P52_has_current_owner, Museo Paul-Dupuy, Orlando 
-Human-Made Object, crm:P55_has_current_location, Toulouse
-Human-Made Object, crm:P45_consists_of, ivory
-Human-Made Object, fabio:is_exemplar_of, olifant
-Come specificare che il proprietario è Orlando?
+# Letter to Bembo	   ===>   https://bianca-lm.github.io/off-lod/text/letter/to-bembo
+# Portrait by Titian   ===>   https://bianca-lm.github.io/off-lod/painting/portrait-titian
+# Editio princeps      ===>   https://bianca-lm.github.io/off-lod/text/ms
+# Manuscript           ===>   https://bianca-lm.github.io/off-lod/text/printed/editio-p
+# English translation  ===>   https://bianca-lm.github.io/off-lod/text/printed/transl-en
+# Fresco			   ===>   https://bianca-lm.github.io/off-lod/painting/fresco-pnb
+# Cor de Roland        ===>   https://bianca-lm.github.io/off-lod/manufact/olifant
+# Roland furieux       ===>   https://bianca-lm.github.io/off-lod/statue/roland-louvre
+# Six memos Calvino   ===>   https://bianca-lm.github.io/off-lod/text/essay/6memos-calvino
+# Play                 ===>   https://bianca-lm.github.io/off-lod/performance/play-ronconi
+# Flyer                ===>   https://bianca-lm.github.io/off-lod/manufact/flyer-geniusbo
+# Ruggero              ===>   https://bianca-lm.github.io/off-lod/person/fictious/ruggero
+# Orlando              ===>   https://bianca-lm.github.io/off-lod/person/fictious/orlando
