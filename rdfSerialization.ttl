@@ -1,0 +1,22 @@
+# Orlando furioso      ===>   https://bianca-lm.github.io/off-lod/text/orlando-furioso
+# Letter to Bembo	   ===>   https://bianca-lm.github.io/off-lod/item/arc/letter-bembo
+# Portrait by Titian   ===>   https://bianca-lm.github.io/off-lod/item/mus/portrait-titian
+# Editio princeps      ===>   https://bianca-lm.github.io/off-lod/item/lib/ms
+# Manuscript           ===>   https://bianca-lm.github.io/off-lod/item/lib/editio-p
+# English translation  ===>   https://bianca-lm.github.io/off-lod/item/lib/transl-en
+# Fresco			   ===>   https://bianca-lm.github.io/off-lod/item/mus/fresco-pnb
+# Cor de Roland        ===>   https://bianca-lm.github.io/off-lod/item/mus/olifant
+# Roland furieux       ===>   https://bianca-lm.github.io/off-lod/item/mus/roland-louvre
+# Six memos, Calvino   ===>   https://bianca-lm.github.io/off-lod/item/lib/6memos-calvino
+# Play                 ===>   https://bianca-lm.github.io/off-lod/item/arc/play-ronconi
+# Flyer                ===>   https://bianca-lm.github.io/off-lod/item/arc/flyer-geniusbo
+# Ariosto              ===>   https://bianca-lm.github.io/off-lod/person/lud-ariosto
+# Ruggero              ===>   https://bianca-lm.github.io/off-lod/person/fictious/
+# Orlando              ===>   https://bianca-lm.github.io/off-lod/person/fictious/
+
+
+@base <https://bianca-lm.github.io/off-lod/>.
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix fabio: <http://purl.org/spar/fabio>. 
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
