@@ -791,9 +791,13 @@ button:hover .button-text {
 .tabs ul li label:hover svg, .tabs ul li label:focus svg, .tabs ul li label:active svg {
   fill: #bec5cf;
 }
+
+.first-slider {
+  width: 25%
+}
+
 .tabs .slider {
   position: relative;
-  width: 25%;
   transition: all 0.33s cubic-bezier(0.38, 0.8, 0.32, 1.07);
 }
 .tabs .slider .indicator {
@@ -970,4 +974,26 @@ z-index:100;
 
 footer {
 	background-color: #d7d28e;
+}
+
+#Data-desc {
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+    color: #000;
+}
+
+.table-title-desc {
+  padding-left: 10%;
+  padding-bottom: 10px
+}
+
+.table-datadesc {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.second-slider {
+  width: 33.3%;
 }
