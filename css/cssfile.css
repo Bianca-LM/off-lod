@@ -565,7 +565,7 @@ button:hover .button-text {
 	padding:0;
 	margin:0;
 	padding-top:22px;
-	z-index:9999;
+	z-index:100;
 	position:absolute;
 	width:100%;
 	margin-top:-40px
