@@ -54,7 +54,7 @@
 <https://bianca-lm.github.io/off-lod/text/ms> a fabio:manuscript;
 	crm:P102_has_title "Ms.S.Mart.353"^^xsd:string;
 	crm:P108_was_produced_by viaf:71386455;
-	crm:P4_has_time-span "1500-1600"^^xsd:string; #NOT OK!!!! *******
+	crm:P4_has_time-span "1500-1600"^^xsd:string; 
 	crm:P52_has_current_owner viaf:123993876;
 	crm:P55_has_current_location geonames:3172391;
 	crm:P45_consists_of aat:300014109;
@@ -114,7 +114,7 @@
 <https://bianca-lm.github.io/off-lod/painting/fresco-pnb> a crm:E71_Human-Made_Thing;
 	crm:P102_has_title "Alcina riceve Ruggero nel suo castello"@it;
 	crm:P108_was_produced_by viaf:88804962;
-	crm:P4_has_time-span "1548-1550"^^xsd:string; #NOT OK!!!! *******
+	crm:P4_has_time-span "1548-1550"^^xsd:string; 
 	crm:P32_used_general_technique aat:300177433;
 	crm:P52_has_current_owner viaf:141530565;
 	crm:P55_has_current_location geonames:3181927;
@@ -134,7 +134,7 @@
 
 <https://bianca-lm.github.io/off-lod/manufact/olifant> a crm:E22_Human-Made_Object;
 	crm:P102_has_title "Cor de Roland"@fr;
-	crm:P4_has_time-span "1000-1100"^^xsd:string; #NOT OK!!!! *******
+	crm:P4_has_time-span "1000-1100"^^xsd:string; 
 	crm:P33_used_specific_technique aat:300010957;
 	crm:P52_has_current_owner viaf:137832672;
 	crm:P55_has_current_location geonames:6453974;
