@@ -40,6 +40,9 @@ h1 span #cursive{
   transition: max-width 0.2s, opacity 0.2s;
 }
 
+nav {
+  max-width:30px;
+}
 
 nav ul {
   margin: none;
