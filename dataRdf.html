@@ -158,12 +158,12 @@
                                         </tr>
                                         <tr>
                                         <td>Book</td>
-                                        <td> fabio:has_publisher</td>
+                                        <td> fabio:hasPublisher</td>
                                         <td> Giovanni Mazocco dal Bondeno</td>
                                         </tr>
                                         <tr>
                                         <td>Book</td>
-                                        <td> fabio:has_place_of_publication</td>
+                                        <td> fabio:hasPlaceOfPublication</td>
                                         <td> Ferrara</td>
                                         </tr>
                                         <tr>
@@ -188,13 +188,23 @@
                                         </tr>
                                         <tr>
                                         <td>Book</td>
-                                        <td> fabio:has_examplar</td>
-                                        <td> Manuscript</td>
+                                        <td>fabio:has_examplar</td>
+                                        <td>Manuscript</td>
                                         </tr>
                                         <tr>
                                         <td>Book</td>
-                                        <td> bf:editionStatement</td>
-                                        <td> ?</td>
+                                        <td>bf:editionStatement</td>
+                                        <td>First edition</td>
+                                        </tr>                                        
+                                        <tr>
+                                        <td>Book</td>
+                                        <td>fabio:isPortrayalOf</td>
+                                        <td>Orlando Furioso</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Book</td>
+                                        <td>crm:P2_type</td>
+                                        <td>printed book</td>
                                         </tr>
                                         <tr>
                                         <td>Book</td>
@@ -222,17 +232,17 @@
                                         </tr>
                                         <tr>
                                             <td>Book</td>
-                                            <td> fabio:has_publication_date</td>
+                                            <td> fabio:hasPublicationDate</td>
                                             <td> 1591</td>
                                         </tr>
                                         <tr>
                                             <td>Book</td>
-                                            <td> fabio:has_publisher</td>
+                                            <td> fabio:hasPublisher</td>
                                             <td> Richard Field</td>
                                         </tr>
                                         <tr>
                                             <td>Book</td>
-                                            <td> fabio:has_place_of_publication</td>
+                                            <td> fabio:hasPlaceOfPublication</td>
                                             <td> London</td>
                                             </tr>
                                         <tr>
@@ -264,6 +274,11 @@
                                             <td>Book</td>
                                             <td>crm:P3_note</td>
                                             <td>?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Book</td>
+                                            <td>crm:P2_hasType</td>
+                                            <td>Printed Book</td>
                                         </tr>
                                     </table>
                                     </div>
@@ -365,7 +380,7 @@
                                         </tr>
                                         <tr>
                                             <td>Manuscript</td>
-                                            <td> crm:P4_has_time-span</td>
+                                            <td> crm:P4_has_time_span</td>
                                             <td> XVI century</td>
                                         </tr>
                                         <tr>
@@ -391,6 +406,16 @@
                                         <tr>
                                             <td>Manuscript</td>
                                             <td>crm:P3_note</td>
+                                            <td>?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manuscript</td>
+                                            <td>fabio:isPortraylOf</td>
+                                            <td>?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Manuscript</td>
+                                            <td>crm:P2_has_type</td>
                                             <td>?</td>
                                         </tr>
                                     </table>
@@ -440,18 +465,13 @@
                                         </tr>
                                         <tr>
                                             <td>Letter</td>
-                                            <td> fabio:has_place_of_publication</td>
+                                            <td> schema::locationCreated</td>
                                             <td> Ferrara</td>
                                         </tr>
                                         <tr>
                                             <td>Letter</td>
                                             <td> lido:resourceDateTaken</td>
                                             <td> 1531-02-23</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Letter</td>
-                                            <td> fabio:has_publication_date</td>
-                                            <td> ?a</td>
                                         </tr>
                                         <tr>
                                             <td>Letter</td>
@@ -483,6 +503,11 @@
                                             <td>crm:P3_note</td>
                                             <td>?</td>
                                         </tr>
+                                        <tr>
+                                            <td>Letter</td>
+                                            <td>crm:P2_has_type</td>
+                                            <td>letter</td>
+                                        </tr>
                                     </table>
                                 </div>
                                 <div class="table-datadesc">
@@ -491,11 +516,11 @@
                                             <th>Subject</th>
                                             <th>Property</th>
                                             <th>Object</th>
-                                        </tr>
-                                        <tr>
+                                            </tr>
+                                            <tr>
                                             <td>Archival Resource</td>
                                             <td> crm:P102_has_title</td>
-                                            <td> ?</td>
+                                            <td> L'Orlando Furioso</td>
                                             </tr>
                                             <tr>
                                             <td>Archival Resource</td>
@@ -529,9 +554,19 @@
                                             </tr>
                                             <tr>
                                             <td>Archival Resource</td>
+                                            <td> crm:P72_has_language</td>
+                                            <td> it (play)</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Archival Resource</td>
                                             <td>crm:P3_note</td>
                                             <td>?</td>
-                                        </tr>
+                                            </tr>
+                                            <tr>
+                                            <td>Play</td>
+                                            <td>crm:P2_has_type</td>
+                                            <td>?</td>
+                                            </tr>
                                     </table>
                                 </div>
                                 <div class="table-datadesc">
@@ -553,7 +588,7 @@
                                         </tr>
                                         <tr>
                                             <td>Play</td>
-                                            <td> dcterms:contributor</td>
+                                            <td> crm:P108_was_produced_by</td>
                                             <td> Edoardo Sanguineti </td>
                                         </tr>
                                         <tr>
@@ -568,12 +603,17 @@
                                         </tr>
                                         <tr>
                                             <td>Play</td>
-                                            <td> crm:P129_is_about</td>
+                                            <td> prov:isInfluencedBy</td>
                                             <td> Orlando Furioso</td>
                                         </tr>
                                         <tr>
                                             <td>Play</td>
                                             <td>crm:P3_note</td>
+                                            <td>?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Play</td>
+                                            <td>crm:P2_has_type</td>
                                             <td>?</td>
                                         </tr>
                                     </table>
@@ -600,17 +640,17 @@
                                         </tr>
                                         <tr>
                                             <td>Human-Made Thing</td>
-                                            <td> lido:resourceDateTaken</td>
+                                            <td> crm:P4_has_time_span</td>
                                             <td> about 1510</td>
                                         </tr>
                                         <tr>
                                             <td>Human-Made Thing</td>
                                             <td> crm:P32_used_general_technique</td>
-                                            <td> painting</td>
+                                            <td> oil on canvas</td>
                                         </tr>
                                         <tr>
                                             <td>Human-Made Thing</td>
-                                            <td>	crm:P52_has_current_owner</td>
+                                            <td> crm:P52_has_current_owner</td>
                                             <td> The National Gallery</td>
                                         </tr>
                                         <tr>
@@ -621,7 +661,7 @@
                                         <tr>
                                             <td>Human-Made Thing</td>
                                             <td> crm:P45_consists_of</td>
-                                            <td> oil on canvas</td>
+                                            <td> canvas</td>
                                         </tr>
                                         <tr>
                                             <td>Human-Made Thing</td>
@@ -630,8 +670,14 @@
                                         </tr>
                                         <tr>
                                             <td>Human-Made Thing</td>
-                                            <td>crm:P3_note</td>
+                                            <td>crm:P3_has_note</td>
                                             <td>?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td>crm:P2_has_type</td>
+                                            <td>painting</td>
+                                        </tr>
                                         </table>
                                     </div>
                                     <div class="table-datadesc">
@@ -653,7 +699,7 @@
                                         </tr>
                                         <tr>
                                             <td>Human-Made Thing</td>
-                                            <td> lido:resourceDateTaken</td>
+                                            <td> crm:P4_has_time_span</td>
                                             <td> 1548/1550</td>
                                         </tr>
                                         <tr>
@@ -674,7 +720,7 @@
                                         <tr>
                                             <td>Human-Made Thing</td>
                                             <td> crm:P45_consists_of</td>
-                                            <td> ?</td>
+                                            <td> lime plaster</td>
                                         </tr>
                                         <tr>
                                             <td>Human-Made Thing</td>
@@ -684,6 +730,11 @@
                                         <tr>
                                             <td>Human-Made Thing</td>
                                             <td>crm:P3_note</td>
+                                            <td>?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Thing</td>
+                                            <td>crm:P2_has_type</td>
                                             <td>?</td>
                                         </tr>
                                         </table>
@@ -707,12 +758,7 @@
                                         </tr>
                                         <tr>
                                             <td>Human-Made Object</td>
-                                            <td> crm:P4_has_time-span</td>
-                                            <td> ?</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Human-Made Object</td>
-                                            <td> bf:creationDate</td>
+                                            <td> lido:resourceDateTaken</td>
                                             <td> 1867</td>
                                         </tr>
                                         <tr>
@@ -745,6 +791,11 @@
                                             <td> crm:P3_note</td>
                                             <td> ?</td>
                                         </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P2_has_type</td>
+                                            <td> statue</td>
+                                        </tr>
                                         </table>
                                     </div>
                                     <div class="table-datadesc">
@@ -761,7 +812,7 @@
                                         </tr>
                                         <tr>
                                             <td>Human-Made Object</td>
-                                            <td> crm:P4_has_time-span</td>
+                                            <td> crm:P4_has_time_span</td>
                                             <td> XI century</td>
                                         </tr>
                                         <tr>
@@ -786,13 +837,18 @@
                                         </tr>
                                          <tr>
                                             <td>Human-Made Object</td>
-                                            <td> fabio:is_exemplar_of</td>
+                                            <td> fabio:isExemplarOf</td>
                                             <td> olifant</td>
                                         </tr>
                                         <tr>
                                             <td>Human-Made Object</td>
                                             <td> crm:P3_note</td>
                                             <td> ?</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Human-Made Object</td>
+                                            <td> crm:P2_has_type</td>
+                                            <td> manufact</td>
                                         </tr>
                                      </table>
                                    </div>
