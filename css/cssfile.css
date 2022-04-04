@@ -11,9 +11,35 @@ header {
   margin-left: -15px;
 }
 
-header .logo img {
-  max-height: 30px;
+h1 {
+  font-size: 6vh;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  white-space: nowrap;
 }
+
+#zk-trigger {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+h1 span #cursive{
+        color: red;
+      }
+
+#hide1, #hide2{
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.2s, opacity 0.2s;
+}
+
+#zk-trigger:hover #hide1, #zk-trigger:hover #hide2{
+  max-width: 100px;
+  opacity: 1;
+  transition: max-width 0.2s, opacity 0.2s;
+}
+
 
 nav {
   padding: 0;
