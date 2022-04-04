@@ -11,12 +11,11 @@ header {
   margin-left: -15px;
 }
 
-js-typewriter {
+h1 {
   font-size: 5vh;
   margin-top: 2%;
   margin-bottom: 2%;
   white-space: nowrap;
-  visibility: hidden;
 }
 
 #zk-trigger {
