@@ -732,15 +732,24 @@ button:hover .button-text {
   display: table;
   max-width: 1300px;
 }
+
+.tabDatadesc{
+  table-layout: fit-content;
+  width: fit-content%;
+  border-collapse: collapse;
+}
+
 .tabs input[name=tab-control] {
   display: none;
 }
+
 .tabs .content section h2,
 .tabs ul li label {
   font-weight: bold;
   font-size: 18px;
   color: #1d7096;
 }
+
 .tabs ul {
   list-style-type: none;
   padding-left: 0;
