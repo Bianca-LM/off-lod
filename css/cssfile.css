@@ -11,17 +11,38 @@ header {
   margin-left: -15px;
 }
 
-header .logo img {
-  max-height: 30px;
+h1 {
+  font-size: 5vh;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  white-space: nowrap;
 }
 
-nav {
-  padding: 0;
+#zk-trigger {
+  padding-left: 5%;
+  padding-top: 5%;
+}
+
+h1 span #cursive{
+        color: red;
+      }
+
+#hide1, #hide2{
+  display: inline-block;
+  max-width: 0;
+  opacity: 0;
+  transition: max-width 0.2s, opacity 0.2s;
+}
+
+#zk-trigger:hover #hide1, #zk-trigger:hover #hide2{
+  max-width: 100px;
+  opacity: 1;
+  transition: max-width 0.2s, opacity 0.2s;
 }
 
 nav ul {
-  margin: 0;
-  padding: 0;
+  margin: none;
+  padding: none;
   display: flex;
   list-style: none;
   align-items: center;
@@ -354,9 +375,10 @@ div.desc {
 .responsive {
   padding: 30px 6px;
   width: 24.99999%;
-  min-width: 300px;
+  min-width: 280px;
   display: inline-flex;
   float: left;
+  height: 750px;
 }
 
 .clearfix {
@@ -565,7 +587,7 @@ button:hover .button-text {
 	padding:0;
 	margin:0;
 	padding-top:22px;
-	z-index:9999;
+	z-index:100;
 	position:absolute;
 	width:100%;
 	margin-top:-40px

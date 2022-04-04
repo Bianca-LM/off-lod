@@ -50,3 +50,6 @@ var $animation_elements = $('.slide');
     $("#color").click( function() {
       $("body").toggleClass("blue")
     });
+
+
+
