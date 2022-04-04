@@ -41,13 +41,9 @@ h1 span #cursive{
 }
 
 
-nav {
-  padding: 0;
-}
-
 nav ul {
-  margin: 0;
-  padding: 0;
+  margin: none;
+  padding: none;
   display: flex;
   list-style: none;
   align-items: center;
