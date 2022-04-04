@@ -985,13 +985,18 @@ footer {
 }
 
 .table-title-desc {
+  float: left;
   padding-left: 10%;
-  padding-bottom: 10px
 }
 
 .table-datadesc {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.table-desc {
+  width: 100%;
+  border: solid 0.5px rgb(41, 123, 65);
 }
 
 .second-slider {
@@ -1040,7 +1045,7 @@ footer {
 }
 
 .download {
-  float: right;
+  float: left;
   overflow: hidden;
   border-radius: 5px;
   -webkit-box-sizing: border-box;
@@ -1057,6 +1062,7 @@ footer {
   transition: all 300ms ease;
   margin-right: 20px;
   height: 60px;
+  margin-top: 10px
 }
 .download span {
   display: block;
