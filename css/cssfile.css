@@ -357,6 +357,7 @@ div.desc {
   min-width: 300px;
   display: inline-flex;
   float: left;
+  height: 750px;
 }
 
 .clearfix {
