@@ -12,7 +12,7 @@ header {
 }
 
 h1 {
-  font-size: 6vh;
+  font-size: 5vh;
   margin-top: 2%;
   margin-bottom: 2%;
   white-space: nowrap;
@@ -375,7 +375,7 @@ div.desc {
 .responsive {
   padding: 30px 6px;
   width: 24.99999%;
-  min-width: 300px;
+  min-width: 280px;
   display: inline-flex;
   float: left;
   height: 750px;
