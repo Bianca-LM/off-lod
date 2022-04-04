@@ -1,5 +1,6 @@
 @prefix aat: <http://vocab.getty.edu/page/aat/>.
 @prefix bf: <http://id.loc.gov/ontologies/bibframe-2-1-0/>.
+@prefix cito: <http://purl.org/spar/cito/>.
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/7.1.1/> .
 @prefix fabio: <http://purl.org/spar/fabio/>.
 @prefix foaf: <http://xmlns.com/foaf/0.1/>.
@@ -140,3 +141,21 @@
 	crm:P45_consists_of aat:300011857;
 	fabio:is_exemplar_of aat:300042763.
 	# 	crm:P108_was_produced_by Jean Bernard Duseigneur È ANONIMO
+
+<https://bianca-lm.github.io/off-lod/work/orlando-furioso> a crm:E28_Conceptual_Object;
+	owl:sameAs viaf:179842618;
+	crm:P108_was_produced_by viaf:71386455;
+	fabio:hasPortrayal <https://bianca-lm.github.io/off-lod/text/printed/editio-p>;
+	fabio:hasPortrayal <https://bianca-lm.github.io/off-lod/text/ms>;
+	frbr:translation <https://bianca-lm.github.io/off-lod/text/printed/transl-en>;
+	cito:isCitedBy <https://bianca-lm.github.io/off-lod/text/essay/6memos-calvino>;
+	cito:isCitedBy <https://bianca-lm.github.io/off-lod/text/letter/to-bembo>;
+	cito:adaption <https://bianca-lm.github.io/off-lod/play-ronconi>.
+
+
+
+
+
+
+
+
