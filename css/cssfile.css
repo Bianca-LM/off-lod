@@ -23,11 +23,6 @@ h1 {
   white-space: nowrap;
 }
 
-#zk-trigger {
-  padding-left: 5%;
-  padding-top: 5%;
-}
-
 h1 span #cursive{
   color: red;
   font-family: 'Beau Rivage', cursive;
