@@ -344,8 +344,6 @@ h3, h4 {
 
 #itemssection, #teampresentation {
   padding: 30px;
-  background-color: #f7f6e8;
-  content: "";
   clear: both;
   display: table;
   width: 100%;
