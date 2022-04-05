@@ -29,8 +29,9 @@ h1 {
 }
 
 h1 span #cursive{
-        color: red;
-      }
+  color: red;
+  font-family: 'Beau Rivage', cursive;
+}
 
 #hide1, #hide2{
   display: inline-block;
