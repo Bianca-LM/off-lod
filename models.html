@@ -9,6 +9,9 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
     <script type="text/javascript" src="myscript.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
 </head>
 <body id="bodymodels">
     
@@ -16,14 +19,24 @@
     
     <header id="header" class="fixed-top">
         <div class="container-fluid d-flex justify-content-between">
-            <a href="index.html" id="logo"><img src="images/off-logo.png" alt="" class="img-fluid"></a>
-            
+            <a href="index.html" id="logo">
+                <h1>
+                    <span id="zk-trigger">
+                        O<span id="hide1" class="hide">rlando</span>
+                        F<span id="hide2"  class="hide">urioso</span>
+                        <span id="cursive">f<span id="hide1" class="hide">or</span></span>
+                        -L<span id="hide2"  class="hide">inked</span>
+                        O<span id="hide1" class="hide">pen</span>
+                        D<span id="hide2"  class="hide">ata</span>
+                    </span>
+                </h1>
+            </a>
             <!-- Navbar -->
             
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="index.html">Home</a></li>
-                    <li class="dropdown"><a class="scrollto active" href="models.html"><span>Models</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a class="scrollto active" href="models.html"><span>Knowledge Organization</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#conceptualMap">Conceptual map</a></li>
                             <li><a href="#ERModel">E/R model</a></li>
@@ -37,14 +50,13 @@
                             <li><a href="#ConcModel">Conceptual model</a></li>
                         </ul>
                     </li>
-                    <li class="dropdown"><a href="dataRdf.html"><span>Data</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="dataRdf.html"><span>Knowledge Representation</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="dataRdf.html#DataDesc">Data description</a></li>
                             <li><a href="dataRdf.html#Turtle">RDF production</a></li>
                             <li><a href="dataRdf.html#RDFVisualization">RDF visualization</a></li>
                         </ul>
                     </li>
-                    <li><a class="nav-link scrollto" href="index.html#teampresentation">Contact</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav>

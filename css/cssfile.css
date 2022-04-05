@@ -11,6 +11,11 @@ header {
   margin-left: -15px;
 }
 
+#logo {  
+  padding: 10px 0 10px 30px;
+  color: #0f394c;
+}
+
 h1 {
   font-size: 5vh;
   margin-top: 2%;
@@ -24,8 +29,9 @@ h1 {
 }
 
 h1 span #cursive{
-        color: red;
-      }
+  color: red;
+  font-family: 'Beau Rivage', cursive;
+}
 
 #hide1, #hide2{
   display: inline-block;
@@ -338,8 +344,6 @@ h3, h4 {
 
 #itemssection, #teampresentation {
   padding: 30px;
-  background-color: #f7f6e8;
-  content: "";
   clear: both;
   display: table;
   width: 100%;
