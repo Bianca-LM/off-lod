@@ -33,14 +33,14 @@ h1 span #cursive{
   font-family: 'Beau Rivage', cursive;
 }
 
-.hide1, .hide2{
+#hide1, #hide2{
   display: inline-block;
   max-width: 0;
   opacity: 0;
   transition: max-width 0.2s, opacity 0.2s;
 }
 
-#zk-trigger:hover .hide1, #zk-trigger:hover .hide2{
+#zk-trigger:hover #hide1, #zk-trigger:hover #hide2{
   max-width: 100px;
   opacity: 1;
   transition: max-width 0.2s, opacity 0.2s;
