@@ -541,6 +541,10 @@ button:hover .button-text {
   margin-right: auto;
 }
 
+#tabMDScout a {
+  text-decoration: underlined;
+}
+
 .tabalignment {
   width: 80%; 
   border-collapse: collapse; 
